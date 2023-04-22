@@ -124,16 +124,28 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
+        title: "V open source member",
+        company_name: "CSI Chapter",
         // icon: starbucks,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "Augest 2021 - June 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conducting regular meetings to discuss open source projects and new initiatives.",
+            "Conducting workshops and training sessions to help members learn more about open source technologies.",
+            "Coordinating with other teams within the CSI chapter to ensure smooth execution of events."
+        ],
+    },
+    {
+        title: "Technical member ",
+        company_name: "Microsoft Student Chapter",
+        // icon: starbucks,
+        iconBg: "#383E56",
+        date: "October 2022 - Present",
+        points: [
+            "Maintaining the website and ensuring that it is up-to-date and functioning properly.",
+            "Collaborating with other members of the chapter to identify areas for improvement on the website.",
+            "Implementing changes and updates to the website using programming languages such as React.js, tailwind and JavaScript.",
+            "Debugging any issues or errors that arise on the website and working to resolve them."
         ],
     },
 
