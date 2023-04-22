@@ -4,6 +4,19 @@ import javascript from '../assets/tech/javascript.png'
 import reactjs from '../assets/tech/reactjs.png'
 import tailwind from '../assets/tech/tailwind.png'
 import git from '../assets/tech/git.png'
+import bootstrap from '../assets/tech/bootstrap.png'
+import c_ from '../assets/tech/c++.png'
+import django from '../assets/tech/django.png'
+import figma from '../assets/tech/figma.png'
+import firebase from '../assets/tech/firebase.png'
+import flask from '../assets/tech/flask.png'
+import inkscape from '../assets/tech/inkscape.png'
+import java from '../assets/tech/java.png'
+import mysql from '../assets/tech/mysql.png'
+import photoshop from '../assets/tech/photoshop.png'
+import python from '../assets/tech/python.png'
+
+
 import web from '../assets/web.png'
 import mobile from '../assets/mobile.png'
 import creator from '../assets/creator.png'
@@ -63,10 +76,50 @@ const technologies = [
         name: "git",
         icon: git,
     },
-    // {
-    //     name: "figma",
-    //     // icon: figma,
-    // },
+    {
+        name: "figma",
+        icon: figma,
+    },
+    {
+        name: "bootstrap",
+        icon: bootstrap,
+    },
+    {
+        name: "c++",
+        icon: c_,
+    },
+    {
+        name: "django",
+        icon: django,
+    },
+    {
+        name: "firebase",
+        icon: firebase,
+    },
+    {
+        name: "flask",
+        icon: flask,
+    },
+    {
+        name: "inkscape",
+        icon: inkscape,
+    },
+    {
+        name: "java",
+        icon: java,
+    },
+    {
+        name: "mysql",
+        icon: mysql,
+    },
+    {
+        name: "photoshop",
+        icon: photoshop,
+    },
+    {
+        name: "python",
+        icon: python,
+    },
 ];
 
 const experiences = [
