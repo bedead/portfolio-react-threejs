@@ -1,11 +1,12 @@
-import {
-    html,
-    css,
-    git,
-    tailwind,
-    javascript,
-    reactjs,
-} from '../assets'
+import html from '../assets/tech/html.png'
+import css from '../assets/tech/css.png'
+import javascript from '../assets/tech/javascript.png'
+import reactjs from '../assets/tech/reactjs.png'
+import tailwind from '../assets/tech/tailwind.png'
+import git from '../assets/tech/git.png'
+import web from '../assets/web.png'
+import mobile from '../assets/mobile.png'
+import creator from '../assets/creator.png'
 
 const navLinks = [
     {
@@ -24,16 +25,16 @@ const navLinks = [
 
 const services = [
     {
-        title: "Frontend Web Developer",
-        // icon: web,
+        title: "Full Stack Web Development",
+        icon: web,
     },
     {
-        title: "Backend Web Developer",
-        // icon: backend,
+        title: "Designing",
+        icon: creator,
     },
     {
-        title: "Web Designing",
-        // icon: designing,
+        title: "Android Development",
+        icon: mobile,
     },
 ];
 
