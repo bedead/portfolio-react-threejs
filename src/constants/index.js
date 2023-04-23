@@ -127,11 +127,14 @@ const technologies = [
     },
 ];
 
+import csi from '../assets/experience/csi.png'
+import msc from '../assets/experience/msc.png'
+
 const experiences = [
     {
         title: "V open source member",
         company_name: "CSI Chapter",
-        // icon: starbucks,
+        icon: csi,
         iconBg: "#383E56",
         date: "Augest 2021 - June 2022",
         points: [
@@ -143,7 +146,7 @@ const experiences = [
     {
         title: "Technical member ",
         company_name: "Microsoft Student Chapter",
-        // icon: starbucks,
+        icon: msc,
         iconBg: "#383E56",
         date: "October 2022 - Present",
         points: [
