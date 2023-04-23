@@ -30,7 +30,7 @@ const ExperienceCard = ({ experience }) => {
                         className='w-[75%] h-[75%] object-contain'
                     />
                 </div>
-            }
+            }   
         >
             <div>
                 <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>

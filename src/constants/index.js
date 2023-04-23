@@ -1,21 +1,21 @@
-import html from '../assets/tech/html.png'
-import css from '../assets/tech/css.png'
-import javascript from '../assets/tech/javascript.png'
-import reactjs from '../assets/tech/reactjs.png'
-import tailwind from '../assets/tech/tailwind.png'
-import git from '../assets/tech/git.png'
-import bootstrap from '../assets/tech/bootstrap.png'
-import c_ from '../assets/tech/c++.png'
-import django from '../assets/tech/django.png'
-import figma from '../assets/tech/figma.png'
-import firebase from '../assets/tech/firebase.png'
-import flask from '../assets/tech/flask.png'
-import inkscape from '../assets/tech/inkscape.png'
-import java from '../assets/tech/java.png'
-import mysql from '../assets/tech/mysql.png'
-import photoshop from '../assets/tech/photoshop.png'
-import python from '../assets/tech/python.png'
-import github from '../assets/tech/github.png'
+// import html from '../assets/tech/html.png'
+// import css from '../assets/tech/css.png'
+// import javascript from '../assets/tech/javascript.png'
+// import reactjs from '../assets/tech/reactjs.png'
+// import tailwind from '../assets/tech/tailwind.png'
+// import git from '../assets/tech/git.png'
+// import bootstrap from '../assets/tech/bootstrap.png'
+// import c_ from '../assets/tech/c++.png'
+// import django from '../assets/tech/django.png'
+// import figma from '../assets/tech/figma.png'
+// import firebase from '../assets/tech/firebase.png'
+// import flask from '../assets/tech/flask.png'
+// import inkscape from '../assets/tech/inkscape.png'
+// import java from '../assets/tech/java.png'
+// import mysql from '../assets/tech/mysql.png'
+// import photoshop from '../assets/tech/photoshop.png'
+// import python from '../assets/tech/python.png'
+// import github from '../assets/tech/github.png'
 
 
 import web from '../assets/web.png'
@@ -52,80 +52,80 @@ const services = [
     },
 ];
 
-const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "bootstrap",
-        icon: bootstrap,
-    },
-    {
-        name: "c++",
-        icon: c_,
-    },
-    {
-        name: "django",
-        icon: django,
-    },
-    {
-        name: "firebase",
-        icon: firebase,
-    },
-    {
-        name: "flask",
-        icon: flask,
-    },
-    {
-        name: "inkscape",
-        icon: inkscape,
-    },
-    {
-        name: "java",
-        icon: java,
-    },
-    {
-        name: "mysql",
-        icon: mysql,
-    },
-    {
-        name: "photoshop",
-        icon: photoshop,
-    },
-    {
-        name: "python",
-        icon: python,
-    },
-    {
-        name: "github",
-        icon: github,
-    },
-];
+// const technologies = [
+//     {
+//         name: "HTML 5",
+//         icon: html,
+//     },
+//     {
+//         name: "CSS 3",
+//         icon: css,
+//     },
+//     {
+//         name: "JavaScript",
+//         icon: javascript,
+//     },
+//     {
+//         name: "React JS",
+//         icon: reactjs,
+//     },
+//     {
+//         name: "Tailwind CSS",
+//         icon: tailwind,
+//     },
+//     {
+//         name: "git",
+//         icon: git,
+//     },
+//     {
+//         name: "figma",
+//         icon: figma,
+//     },
+//     {
+//         name: "bootstrap",
+//         icon: bootstrap,
+//     },
+//     {
+//         name: "c++",
+//         icon: c_,
+//     },
+//     {
+//         name: "django",
+//         icon: django,
+//     },
+//     {
+//         name: "firebase",
+//         icon: firebase,
+//     },
+//     {
+//         name: "flask",
+//         icon: flask,
+//     },
+//     {
+//         name: "inkscape",
+//         icon: inkscape,
+//     },
+//     {
+//         name: "java",
+//         icon: java,
+//     },
+//     {
+//         name: "mysql",
+//         icon: mysql,
+//     },
+//     {
+//         name: "photoshop",
+//         icon: photoshop,
+//     },
+//     {
+//         name: "python",
+//         icon: python,
+//     },
+//     {
+//         name: "github",
+//         icon: github,
+//     },
+// ];
 
 import csi from '../assets/experience/csi.png'
 import msc from '../assets/experience/msc.png'
@@ -313,4 +313,4 @@ const projects = [
 ];
 
 
-export { navLinks, services, technologies, experiences, projects };
+export { navLinks, services, experiences, projects };
