@@ -15,6 +15,7 @@ import java from '../assets/tech/java.png'
 import mysql from '../assets/tech/mysql.png'
 import photoshop from '../assets/tech/photoshop.png'
 import python from '../assets/tech/python.png'
+import github from '../assets/tech/github.png'
 
 
 import web from '../assets/web.png'
@@ -119,6 +120,10 @@ const technologies = [
     {
         name: "python",
         icon: python,
+    },
+    {
+        name: "github",
+        icon: github,
     },
 ];
 
