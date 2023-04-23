@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import github from '../assets/tech/github.png'
+import github from '../assets/github.png'
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
