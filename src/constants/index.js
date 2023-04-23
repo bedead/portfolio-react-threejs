@@ -153,68 +153,149 @@ const experiences = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Lung cancer classification (YOLOv8)",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "The model is based on a YOLOv8 (Deep learning Neural network architecture) and is trained on the publicly available dataset, which consists of lung CT scans of patients with and without lung cancer.",
         tags: [
             {
-                name: "react",
+                name: "Gradio",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "YOLO",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Roboflow",
                 color: "pink-text-gradient",
             },
         ],
         // image: carrent,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/bedead/lung-cancer-classification-yoloV8---gradio.git",
+        date: 'Mar 2023'
     },
     {
-        name: "Job IT",
+        name: "Face Detection",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "'FACE-DETECTOR' is a GitHub repository showcasing an OpenCV project for detecting human faces using a cascade classifier. The project utilizes the OpenCV library, which is a popular computer vision library in Python, to detect human faces in images or video streams.",
         tags: [
             {
-                name: "react",
+                name: "Cascade classifier",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "Python",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "OpenCV",
+                color: "pink-text-gradient",
+            },
+        ],
+        // image: carrent,
+        source_code_link: "https://github.com/bedead/FACE-DETECTOR.git",
+        date: 'Feb 2023'
+    },
+    {
+        name: "Life Overseas",
+        description:
+            "Life Overseas is a concept website that aims to provide students with valuable resources and information to successfully clear entrance exams for foreign colleges.",
+        tags: [
+            {
+                name: "Flask",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Python",
+                color: "green-text-gradient",
+            },
+        ],
+        // image: carrent,
+        source_code_link: "https://github.com/bedead/Life-Overseas-webiste.git",
+        date: 'Jan 2023'
+    },
+    {
+        name: "Velox Todo",
+        description:
+            "Velox Todo is a Windows application built using JavaFX and JSON files. It is a task management tool designed to help users organize and prioritize their daily tasks efficiently.",
+        tags: [
+            {
+                name: "Java",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "JavaFX",
+                color: "green-text-gradient",
+            },
+            {
+                name: "JSON",
+                color: "pink-text-gradient",
+            },
+        ],
+        // image: carrent,
+        source_code_link: "https://github.com/bedead/Velox-Todo-Application.git",
+        date: 'Sep 2022'
+    },
+    {
+        name: "HI",
+        description:
+            "'HI' is a console-based conversational app written in Python. It utilizes various libraries such as pyinstaller, pyjokes, PyDictionary, platform, psutil, requests, getpass, pywhatkit, pyttsx3, speechrecognition, Wikipedia, Pyaudio, speedtest-cli, pyautogui, and py-cpuinfo to provide a wide range of functionalities.",
+        tags: [
+            {
+                name: "Python",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "JSON",
+                color: "green-text-gradient",
+            },
+        ],
+        // image: carrent,
+        source_code_link: "https://github.com/bedead/HI_2021.12.22.4.git",
+        date: 'Mar 2022'
+    },
+    {
+        name: "Lang go",
+        description:
+            "'Lang Go' is a language translation app that is built using the Kivy and KivyMD frameworks in Python. The app utilizes the TextBlob library for translation capabilities. With 'Lang Go', users can input text in one language and translate it to another language seamlessly.",
+        tags: [
+            {
+                name: "Kivy",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Kivymd",
+                color: "green-text-gradient",
+            },
+            {
+                name: "textBlob",
                 color: "pink-text-gradient",
             },
         ],
         // image: jobit,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/bedead/kivymd-language-translation-app.git",
+        date: 'Mar 2022'
     },
     {
-        name: "Trip Guide",
+        name: "Shape out",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "'Shape Out' is a 2D platformer game available on Amazon, created using the Godot game engine. The game features intuitive controls, colorful graphics, and engaging gameplay that requires players to jump, run, and solve puzzles to progress through the levels.",
         tags: [
             {
-                name: "nextjs",
+                name: "Godot engine",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "GD-script",
                 color: "green-text-gradient",
             },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
         ],
-        // image: tripguide,
-        source_code_link: "https://github.com/",
+        image: tripguide,
+        source_code_link: "https://www.amazon.com/Bedead-Shape-Out-2d-platformer/dp/B0999LHBYN",
+        date: 'Aug 2021'
     },
 ];
+
+export default ProjectsData;
 
 export { navLinks, services, technologies, experiences, projects };
