@@ -151,6 +151,14 @@ const experiences = [
 
 ];
 
+import shapeout from '../assets/project/shapeout.png'
+import facedetection from '../assets/project/facedetection.png'
+import hi from '../assets/project/hi.png'
+import langgo from '../assets/project/langgo.png'
+import lifeoverseas from '../assets/project/lifeoverseas.png'
+import velox from '../assets/project/velox.png'
+import yolo from '../assets/project/yolo.png'
+
 const projects = [
     {
         name: "Lung cancer classification (YOLOv8)",
@@ -170,7 +178,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        // image: carrent,
+        image: yolo,
         source_code_link: "https://github.com/bedead/lung-cancer-classification-yoloV8---gradio.git",
         date: 'Mar 2023'
     },
@@ -192,7 +200,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        // image: carrent,
+        image: facedetection,
         source_code_link: "https://github.com/bedead/FACE-DETECTOR.git",
         date: 'Feb 2023'
     },
@@ -210,7 +218,7 @@ const projects = [
                 color: "green-text-gradient",
             },
         ],
-        // image: carrent,
+        image: lifeoverseas,
         source_code_link: "https://github.com/bedead/Life-Overseas-webiste.git",
         date: 'Jan 2023'
     },
@@ -232,7 +240,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        // image: carrent,
+        image: velox,
         source_code_link: "https://github.com/bedead/Velox-Todo-Application.git",
         date: 'Sep 2022'
     },
@@ -250,7 +258,7 @@ const projects = [
                 color: "green-text-gradient",
             },
         ],
-        // image: carrent,
+        image: hi,
         source_code_link: "https://github.com/bedead/HI_2021.12.22.4.git",
         date: 'Mar 2022'
     },
@@ -272,7 +280,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        // image: jobit,
+        image: langgo,
         source_code_link: "https://github.com/bedead/kivymd-language-translation-app.git",
         date: 'Mar 2022'
     },
@@ -290,12 +298,11 @@ const projects = [
                 color: "green-text-gradient",
             },
         ],
-        image: tripguide,
+        image: shapeout,
         source_code_link: "https://www.amazon.com/Bedead-Shape-Out-2d-platformer/dp/B0999LHBYN",
         date: 'Aug 2021'
     },
 ];
 
-export default ProjectsData;
 
 export { navLinks, services, technologies, experiences, projects };
