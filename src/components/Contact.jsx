@@ -30,19 +30,21 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
-
+        // template_hmf109b
+        // service_w2nrv74
+        // Tlnn1O7PC8WlYPRT7
         emailjs
             .send(
-                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                'service_w2nrv74',
+                'template_hmf109b',
                 {
                     from_name: form.name,
                     to_name: "Satyam Mishra",
                     from_email: form.email,
-                    to_email: "satyam.work.only@gmail.com",
+                    to_email: "satyammishra9050@gmail.com",
                     message: form.message,
                 },
-                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+                'Tlnn1O7PC8WlYPRT7'
             )
             .then(
                 () => {
