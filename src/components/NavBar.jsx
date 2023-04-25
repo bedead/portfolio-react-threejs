@@ -25,7 +25,7 @@ const NavBar = () => {
                         <span className="sm:block hidden">| Bedead</span>
                     </p>
                 </Link>
-                <ul className="list-none hidden sm:flex flex-row gap-10">
+                <ul className="list-none hidden sm:flex space-x-4 lg:space-x-7 flex-row gap-10">
                     {navLinks.map((link) => (
                         <li
                             key={link.id}
