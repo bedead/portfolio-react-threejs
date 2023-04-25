@@ -44,7 +44,7 @@ const experiences = [
         title: "V open source member",
         company_name: "CSI Chapter",
         icon: csi,
-        iconBg: "#383E56",
+        iconBg: "black",
         date: "Augest 2021 - June 2022",
         points: [
             "Conducting regular meetings to discuss open source projects and new initiatives.",
@@ -56,7 +56,7 @@ const experiences = [
         title: "Technical member ",
         company_name: "Microsoft Student Chapter",
         icon: msc,
-        iconBg: "#383E56",
+        iconBg: "black",
         date: "October 2022 - Present",
         points: [
             "Maintaining the website and ensuring that it is up-to-date and functioning properly.",

@@ -20,7 +20,7 @@ const NavBar = () => {
                         window.scrollTo(0, 0);
                     }}>
                     <img src={logo_white} className="w-10 h-10 object-contain" alt='logo' />
-                    <p className="text-white text-[18px] flex">
+                    <p className="text-black text-[18px] flex">
                         Satyam Mishra &nbsp;
                         <span className="sm:block hidden">| Bedead</span>
                     </p>
@@ -29,8 +29,8 @@ const NavBar = () => {
                     {navLinks.map((link) => (
                         <li
                             key={link.id}
-                            className={`${active == link.title ? "text-white" : "text-secondary"}
-                            hover:text-white text-[18px] font-medium cursor-pointer`}
+                            className={`${active == link.title ? "text-black" : "text-secondary"}
+                            hover:text-black text-[18px] font-medium cursor-pointer`}
                             onClick={() => setActive(link.title)}
                         >
                             <a href={`#${link.id}`}>
@@ -48,14 +48,14 @@ const NavBar = () => {
                         className="w-[28px] h-[28px] object-contain cursor-pointer"
                         onClick={() => setToggle(!toggle)} />
 
-                    <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-gradient-to-r from-slate-600 to-black absolute
+                    <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-gradient-to-r from-[#f6f6f6] to-white absolute
                     top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `} >
                         <ul className="list-none flex justify-end items-start flex-col gap-2">
                             {navLinks.map((link) => (
                                 <li
                                     key={link.id}
-                                    className={`${active == link.title ? "text-white" : "text-secondary"}
-                            font-poppins font-medium cursor-pointer text-[16px] `}
+                                    className={`${active == link.title ? "text-black" : "text-secondary"}
+                            font-poppins font-medium cursor-pointer text-[16px] hover:text-black`}
                                     onClick={() => {
                                         setToggle(!toggle);
                                         setActive(link.title);
