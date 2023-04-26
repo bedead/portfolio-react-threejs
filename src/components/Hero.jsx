@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { FallingBalls } from "./canvas";
+import CanvasLoader from "./Loader";
 
 const Hero = () => {
     return (
@@ -23,9 +24,7 @@ const Hero = () => {
             </div>
 
             {/* 3d graphics */}
-            <Suspense fallback={null}>
-                <FallingBalls />
-            </Suspense>
+            <FallingBalls />
 
             {/* scroll down button */}
             <div className="absolute z-10 xs:bottom-10 bottom-32 w-full flex justify-center items-center">

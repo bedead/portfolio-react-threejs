@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -68,7 +67,7 @@ const Contact = () => {
 
     return (
         <div
-            className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden w-[70%] `}
+            className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden md:w-[80%] lg:w-[70%] `}
         >
             <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
@@ -90,7 +89,7 @@ const Contact = () => {
                             value={form.name}
                             onChange={handleChange}
                             placeholder="What's your good name?"
-                            className='bg-black py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
+                            className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
                         />
                     </label>
                     <label className='flex flex-col'>
@@ -101,7 +100,7 @@ const Contact = () => {
                             value={form.email}
                             onChange={handleChange}
                             placeholder="What's your web address?"
-                            className='bg-black py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
+                            className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
                         />
                     </label>
                     <label className='flex flex-col'>
@@ -112,13 +111,13 @@ const Contact = () => {
                             value={form.message}
                             onChange={handleChange}
                             placeholder='What you want to say?'
-                            className='bg-black py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
+                            className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
                         />
                     </label>
 
                     <button
                         type='submit'
-                        className='bg-black py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+                        className='bg-secondary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
                     >
                         {loading ? "Sending..." : "Send"}
                     </button>
