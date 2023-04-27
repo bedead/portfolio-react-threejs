@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://www.satyammishra.tech",
+  "homepage": "https://satyammishra.tech",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
