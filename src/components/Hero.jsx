@@ -18,7 +18,7 @@ const Hero = () => {
                         <span className="text-black "> Satyam</span>
                     </h1>
                     <p className={`${styles.heroSubText} mt-2 text-black-100`}>
-                        I am bla bla bla...
+                        I'm a passionate computer science student with an insatiable curiosity and a drive to learn new things. I enjoy creating websites that are both aesthetically pleasing and easy to navigate, designing compelling sketches that capture the imagination, developing mobile apps that meet real-world needs, and leveraging machine learning to gain valuable insights.
                     </p>
                 </div>
             </div>

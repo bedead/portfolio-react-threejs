@@ -43,7 +43,7 @@ const About = () => {
                 variants={fadeIn('', '', 0.1, 1)}
                 className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] "
             >
-                About me bla bla....
+                I offer website development, design, and mobile development services to help you take your online presence to new heights. With a keen eye for quality and detail, I specialize in creating stunning, user-friendly websites, crafting captivating designs to showcase your brand, and developing high-performing mobile apps that meet real-world needs. Whatever your project, let me help you make it stand out and achieve your goals.
             </motion.p>
             <div className="mt-20 flex flex-wrap gap-10">
                 {services.map((service, index) => (
