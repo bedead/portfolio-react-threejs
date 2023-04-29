@@ -4,7 +4,7 @@ import { styles } from "../styles";
 import github from '../assets/github.png'
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 import { Tilt } from "react-tilt";
 
 const ProjectCard = ({
@@ -17,7 +17,7 @@ const ProjectCard = ({
     date,
 }) => {
     return (
-        <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+        <div >
             <Tilt
                 options={{
                     max: 45,
@@ -64,21 +64,20 @@ const ProjectCard = ({
                 </div>
                 <p>{date}</p>
             </Tilt>
-        </motion.div>
+        </div>
     );
 };
 
 const Works = () => {
     return (
         <div id="project">
-            <motion.div variants={textVariant()}>
+            <div >
                 <p className={`${styles.sectionSubText} `}>My work</p>
                 <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-            </motion.div>
+            </div>
 
             <div className='w-full flex'>
-                <motion.p
-                    variants={fadeIn("", "", 0, 1)}
+                <p
                     className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
                 >
                     The projects that are listed below provide examples of my work in
@@ -86,7 +85,7 @@ const Works = () => {
                     Each project has a brief description, links to code repositories,
                     and live demonstrations. It exhibits my ability to work with various
                     technologies, manage projects efficiently, and solve complex problems.
-                </motion.p>
+                </p>
             </div>
 
             <div className=' mt-20 flex flex-wrap gap-5'>
