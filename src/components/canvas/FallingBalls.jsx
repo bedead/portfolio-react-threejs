@@ -13,7 +13,7 @@ THREE.ColorManagement.legacyMode = false
 const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#c0a0a0", emissive: "red" })
 const capMaterial = new THREE.MeshStandardMaterial({ metalness: 0.75, roughness: 0.15, color: "#8a492f", emissive: "#600000", envMapIntensity: 20 })
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28)
-const baubles = [...Array(15)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }))
+const baubles = [...Array(3)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }))
 
 function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloatSpread }) {
 	const { nodes } = useGLTF(cap)
@@ -44,7 +44,8 @@ const FallingBalls = () => (
 	<Canvas
 		gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
 		camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
-		onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+		onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
+	>
 		<ambientLight intensity={1} />
 		<spotLight position={[20, 20, 25]} penumbra={1} angle={0.2} color="white" castShadow shadow-mapSize={[512, 512]} />
 		<directionalLight position={[0, 5, -4]} intensity={4} />
