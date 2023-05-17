@@ -1,6 +1,6 @@
-import web from '../assets/web.png'
-import mobile from '../assets/mobile.png'
-import creator from '../assets/creator.png'
+import web from '../assets/web.webp'
+import mobile from '../assets/mobile.webp'
+import creator from '../assets/creator.webp'
 
 const navLinks = [
     {
@@ -36,8 +36,8 @@ const services = [
     },
 ];
 
-import csi from '../assets/experience/csi.png'
-import msc from '../assets/experience/msc.png'
+import csi from '../assets/experience/csi.webp'
+import msc from '../assets/experience/msc.webp'
 
 const experiences = [
     {
@@ -68,13 +68,13 @@ const experiences = [
 
 ];
 
-import shapeout from '../assets/project/shapeout.png'
-import facedetection from '../assets/project/facedetection.png'
-import hi from '../assets/project/hi.png'
-import langgo from '../assets/project/langgo.png'
-import lifeoverseas from '../assets/project/lifeoverseas.png'
-import velox from '../assets/project/velox.png'
-import yolo from '../assets/project/yolo.png'
+import shapeout from '../assets/project/shapeout.webp'
+import facedetection from '../assets/project/facedetection.webp'
+import hi from '../assets/project/hi.webp'
+import langgo from '../assets/project/langgo.webp'
+import lifeoverseas from '../assets/project/lifeoverseas.webp'
+import velox from '../assets/project/velox.webp'
+import yolo from '../assets/project/yolo.webp'
 
 const projects = [
     {

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import { styles } from '../styles'
 import { navLinks } from "../constants";
-import logo_white from '../assets/logo-white.png'
-import menu from '../assets/menu.png'
-import close from '../assets/close.png'
+import logo_white from '../assets/logo-white.webp'
+import menu from '../assets/menu.webp'
+import close from '../assets/close.webp'
 
 const NavBar = () => {
     const [active, setActive] = useState('');
