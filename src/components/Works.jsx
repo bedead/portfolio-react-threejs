@@ -17,7 +17,7 @@ const ProjectCard = ({
     date,
 }) => {
     return (
-        <div >
+        <motion.dev variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
             <Tilt
                 options={{
                     max: 45,
@@ -64,19 +64,19 @@ const ProjectCard = ({
                 </div>
                 <p>{date}</p>
             </Tilt>
-        </div>
+        </motion.dev>
     );
 };
 
 const Works = () => {
     return (
         <div id="project">
-            <div >
+            <motion.div variants={textVariant()}>
                 <p className={`${styles.sectionSubText} `}>My work</p>
                 <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-            </div>
+            </motion.div>
 
-            <div className='w-full flex'>
+            <motion.dev className='w-full flex' variants={fadeIn('', '', 0, 1)}>
                 <p
                     className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
                 >
@@ -86,7 +86,7 @@ const Works = () => {
                     and live demonstrations. It exhibits my ability to work with various
                     technologies, manage projects efficiently, and solve complex problems.
                 </p>
-            </div>
+            </motion.dev>
 
             <div className=' mt-20 flex flex-wrap gap-5'>
                 {projects.map((project, index) => (
