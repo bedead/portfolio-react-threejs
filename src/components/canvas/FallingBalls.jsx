@@ -1,5 +1,5 @@
 import * as THREE from "three"
-import { Suspense, useRef } from "react"
+import { Suspense, useRef, useEffect } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Environment, useGLTF } from "@react-three/drei"
 import { EffectComposer, SSAO } from "@react-three/postprocessing"
@@ -10,23 +10,47 @@ import file from '../../assets/adamsbridge.hdr?hdr'
 import CanvasLoader from "../Loader"
 
 THREE.ColorManagement.legacyMode = false
-const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#c0a0a0", emissive: "red" })
-const capMaterial = new THREE.MeshStandardMaterial({ metalness: 0.75, roughness: 0.15, color: "#8a492f", emissive: "#600000", envMapIntensity: 20 })
-const sphereGeometry = new THREE.SphereGeometry(1, 28, 28)
-const baubles = [...Array(3)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }))
+const baubleMaterial = new THREE.MeshStandardMaterial({ color: "#c0a0a0" });
+const capMaterial = new THREE.MeshStandardMaterial({ metalness: 0.75, roughness: 0.15, color: "#8a492f", emissive: "#600000" })
+const sphereGeometry = new THREE.SphereGeometry(1, 12, 12)
+const baubles = [...Array(3)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.75][Math.floor(Math.random() * 5)] }))
 
-function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloatSpread }) {
-	const { nodes } = useGLTF(cap)
+function Bauble({ scale, r = THREE.MathUtils.randFloatSpread }) {
+	const { nodes } = useGLTF(cap);
+	useEffect(() => {
+		return () => {
+			nodes?.Mesh_1?.geometry.dispose();
+			nodes?.Mesh_1?.material?.dispose();
+		};
+	}, []);
 	const api = useRef()
+	// useFrame((state, delta) => {
+	// 	delta = Math.min(0.1, delta)
+	// 	api.current.applyImpulse(
+	// 		vec
+	// 			.copy(api.current.translation())
+	// 			.normalize()
+	// 			.multiply({ x: -50 * delta * scale, y: -150 * delta * scale, z: -50 * delta * scale }),
+	// 	)
+	// })
 	useFrame((state, delta) => {
-		delta = Math.min(0.1, delta)
+		delta = Math.min(0.1, delta);
+		const impulseVector = new THREE.Vector3();
 		api.current.applyImpulse(
-			vec
+			impulseVector
 				.copy(api.current.translation())
 				.normalize()
-				.multiply({ x: -50 * delta * scale, y: -150 * delta * scale, z: -50 * delta * scale }),
-		)
-	})
+				.multiplyScalar(-50 * delta * scale),
+			impulseVector
+				.copy(api.current.translation())
+				.normalize()
+				.multiplyScalar(-150 * delta * scale),
+			impulseVector
+				.copy(api.current.translation())
+				.normalize()
+				.multiplyScalar(-50 * delta * scale)
+		);
+	}, []);
 	return (
 		<Suspense fallback={<CanvasLoader />} >
 			<RigidBody linearDamping={0.75} angularDamping={0.15} friction={0.2} position={[r(20), r(20) - 25, r(20) - 10]} ref={api} colliders={false} dispose={null}>
@@ -40,8 +64,10 @@ function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloa
 }
 
 
-const FallingBalls = () => (
-	<Canvas
+const FallingBalls = () => {
+	// const { nodes } = useGLTF(cap);
+
+	return (<Canvas
 		gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
 		camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
 		onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
@@ -59,6 +85,7 @@ const FallingBalls = () => (
 			<SSAO samples={21} radius={0.03} intensity={15} luminanceInfluence={0.6} color="red" />
 		</EffectComposer>
 	</Canvas>
-)
+	)
+}
 
 export default FallingBalls;
