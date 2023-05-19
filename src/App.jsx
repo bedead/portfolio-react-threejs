@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import loadingAnim from './assets/anim-bg.gif'
 
 const Navbar = lazy(() => import("./components/NavBar"));
 const Hero = lazy(() => import("./components/Hero"));
@@ -10,11 +9,12 @@ const Experience = lazy(() => import("./components/Experience"));
 const Tech = lazy(() => import("./components/Tech"));
 const Contact = lazy(() => import("./components/Contact"));
 
+import load from './assets/anim-bg.gif'
 
 const renderLoader = () => {
 	return (
 		<div className="h-screen flex justify-center items-center">
-			<img className="w-[150px] h-[117px] " src={loadingAnim} />
+			<img src={load} className="w-[150px] h-[117px] " />
 		</div>
 	)
 }
