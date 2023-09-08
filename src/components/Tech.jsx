@@ -2,7 +2,7 @@ import React from "react";
 
 import { SectionWrapper } from "../hoc";
 // import { technologies } from "../constants";
-import { BallCanvas } from ".";
+import BallCanvas from './canvas/Ball'
 import texture from '../assets/texture.webp'
 
 const Tech = () => {

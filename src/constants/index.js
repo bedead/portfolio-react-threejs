@@ -31,7 +31,7 @@ const services = [
         icon: creator,
     },
     {
-        title: "Android Development",
+        title: "ML and DL Learner",
         icon: mobile,
     },
 ];
@@ -57,7 +57,7 @@ const experiences = [
         company_name: "Microsoft Student Chapter",
         icon: msc,
         iconBg: "black",
-        date: "October 2022 - Present",
+        date: "October 2022 - March 2023",
         points: [
             "Maintaining the website and ensuring that it is up-to-date and functioning properly.",
             "Collaborating with other members of the chapter to identify areas for improvement on the website.",
@@ -75,12 +75,35 @@ import langgo from '../assets/project/langgo.webp'
 import lifeoverseas from '../assets/project/lifeoverseas.webp'
 import velox from '../assets/project/velox.webp'
 import yolo from '../assets/project/yolo.webp'
+import anon_exchange from '../assets/project/anon_exchange.webp'
 
 const projects = [
     {
-        name: "Lung cancer classification (YOLOv8)",
+        name: "Anon Exchange - Anonymous chatting app",
         description:
-            "The model is based on a YOLOv8 (Deep learning Neural network architecture) and is trained on the publicly available dataset, which consists of lung CT scans of patients with and without lung cancer.",
+            "An innovative anonymous chatting app that redefines digital interactions. This project empowers strangers to connect seamlessly, engaging in candid conversations without the constraints of identity. What sets us apart is our commitment to privacy, allowing users to create exclusive private chat rooms for confidential discussions.",
+        tags: [
+            {
+                name: "vitejs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind CSS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: anon_exchange,
+        source_code_link: "https://github.com/bedead/Anon-Exchange-chatting",
+        date: 'August 2023'
+    },
+    {
+        name: "PATENT - CLASSIFICATION OF LUNG CANCER USING DEEP LEARNING TECHNIQUES.",
+        description:
+            "Application No - 202341039647 The model is based on a YOLOv8 (Deep learning Neural network architecture) and is trained on the publicly available dataset, which consists of lung CT scans of patients with and without lung cancer.",
         tags: [
             {
                 name: "Gradio",
@@ -97,7 +120,7 @@ const projects = [
         ],
         image: yolo,
         source_code_link: "https://github.com/bedead/lung-cancer-classification-yoloV8---gradio.git",
-        date: 'Mar 2023'
+        date: 'June 2023'
     },
     {
         name: "Face Detection",
