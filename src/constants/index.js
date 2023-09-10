@@ -19,6 +19,10 @@ const navLinks = [
         id: "contact",
         title: "Contact",
     },
+    {
+        id: "coming_soon",
+        title: "Coming soon",
+    },
 ];
 
 const services = [

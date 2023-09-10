@@ -31,7 +31,7 @@ const Hero = () => {
                             styles.heroSubText
                         } mt-2 text-black-100`
                     }>
-                        I'm a passionate computer science student with an insatiable curiosity and a drive to learn new things.
+                        I'm a computer science student with simple, dumb mind .
                     </p>
                 </div>
             </div>
