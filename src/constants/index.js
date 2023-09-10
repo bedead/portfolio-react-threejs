@@ -76,6 +76,7 @@ import lifeoverseas from '../assets/project/lifeoverseas.webp'
 import velox from '../assets/project/velox.webp'
 import yolo from '../assets/project/yolo.webp'
 import anon_exchange from '../assets/project/anon_exchange.webp'
+import banana_classification from '../assets/project/banana_class.webp'
 
 const projects = [
     {
@@ -98,6 +99,24 @@ const projects = [
         ],
         image: anon_exchange,
         source_code_link: "https://github.com/bedead/Anon-Exchange-chatting",
+        date: 'August 2023'
+    },
+    {
+        name: "Banana disease classification",
+        description:
+            "Banana disease classification is a project that uses a YOLOv8 deep learning model to detect and identify various diseases affecting banana plants. The project is based on a custom dataset of images of banana leaves with different types of infections. The project aims to provide a fast and accurate diagnosis of banana diseases, which can help farmers and researchers to prevent crop losses and improve banana production.",
+        tags: [
+            {
+                name: "YOLOv8",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Colab",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: banana_classification,
+        source_code_link: "https://colab.research.google.com/drive/1TLumA28dCY-9_lzouIJtt2CsCjONGdNy?usp=sharing",
         date: 'August 2023'
     },
     {
