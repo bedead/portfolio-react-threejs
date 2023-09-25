@@ -43,7 +43,7 @@ const NavBar = () => {
                                 `${
                                     active == link.title ? "text-black" : "text-secondary"
                                 }
-                            hover:text-black text-[18px] font-medium cursor-pointer`
+                            hover:text-black hover:underline underline-offset-8  text-[18px] font-medium cursor-pointer`
                             }
                             onClick={
                                 () => setActive(link.title)
