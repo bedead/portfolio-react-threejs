@@ -1,7 +1,7 @@
 import React from "react";
 import {styles} from "../styles";
 import {motion} from "framer-motion";
-import waves from '../assets/waves.png'
+// import waves from '../assets/waves.png'
 // import {FallingBalls} from "./canvas";
 // import CanvasLoader from "./Loader";
 
