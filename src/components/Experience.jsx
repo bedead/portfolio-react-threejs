@@ -77,7 +77,7 @@ const Experience = () => {
                         styles.sectionSubText
                     } text-center`
                 }>
-                    What I have done so far
+                    Where I have worked so far?
                 </p>
                 <h2 className={
                     `${

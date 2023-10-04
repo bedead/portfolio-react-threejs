@@ -82,19 +82,19 @@ const ProjectCard = ({
 
 const Works = () => {
     return (
-        <div id="project">
+        <div>
             <motion.div variants={
                 textVariant(0)
             }>
                 <p className={
                     `${
                         styles.sectionSubText
-                    } `
-                }>My work</p>
+                    } text-center`
+                }>My works?</p>
                 <h2 className={
                     `${
                         styles.sectionHeadText
-                    }`
+                    } text-center`
                 }>Projects.</h2>
             </motion.div>
 
@@ -102,7 +102,7 @@ const Works = () => {
                     fadeIn('', '', 0.1, 1)
                 }
                 className='w-full flex'>
-                <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+                <p className='mt-3 text-secondary text-center text-[17px] max-w-full leading-[30px]'>
                     The projects that are listed below provide examples of my work in the real world, showcasing my abilities and experience. Each project has a brief description, links to code repositories, and live demonstrations. It exhibits my ability to work with various technologies, manage projects efficiently, and solve complex problems.
                 </p>
             </motion.div>
@@ -122,4 +122,4 @@ const Works = () => {
     );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "project");

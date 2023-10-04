@@ -40,19 +40,23 @@ const About = () => {
                 textVariant(0)
             }>
                 <p className={
-                    styles.sectionSubText
-                }>Introduction</p>
+                    `${
+                        styles.sectionSubText
+                    } text-center`
+                }>Introduction?</p>
                 <h2 className={
-                    styles.sectionHeadText
+                    `${
+                        styles.sectionHeadText
+                    } text-center`
                 }>Overview.</h2>
             </motion.div>
             <motion.p variants={
                     fadeIn('', '', 0.1, 1)
                 }
-                className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] ">
+                className="mt-4 text-secondary text-center text-[17px] max-w-full leading-[30px] ">
                 I am a full stack web developer, graphic designer, and machine learning enthusiast. I have experience in creating dynamic and responsive websites using HTML, CSS, JavaScript, and other frameworks. I also have a passion for designing graphics that are eye-catching and appealing. I am always eager to learn new skills and technologies in the field of machine learning and deep learning. I have completed several projects and courses on various topics such as computer vision, and natural language processing.
             </motion.p>
-            <div className="mt-20 flex flex-wrap gap-10">
+            <div className="mt-20 flex flex-wrap justify-center gap-10">
                 {
                 services.map((service, index) => (
                     <ServiceCard key={
