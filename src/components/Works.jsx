@@ -1,11 +1,16 @@
 import React from "react";
 import {motion} from "framer-motion";
 import {styles} from "../styles";
-import github from '../assets/github.webp'
 import {SectionWrapper} from "../hoc";
 import {projects} from "../constants";
 import {fadeIn, textVariant, zoomIn} from "../utils/motion";
 import {Tilt} from "react-tilt";
+
+
+// source link icons
+import github from '../assets/github.webp'
+
+
 
 const ProjectCard = ({
     index,
@@ -14,7 +19,8 @@ const ProjectCard = ({
     tags,
     image,
     source_code_link,
-    date
+    date,
+    link_type
 }) => {
     return (
         <motion.div>
@@ -41,7 +47,7 @@ const ProjectCard = ({
                                     }
                                     className='white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
                                     <img src={github}
-                                        alt='source code'
+                                        alt='github repositories for projects'
                                         className='w-1/2 h-1/2 object-contain'/>
                                 </div>
                             </div>
@@ -84,7 +90,7 @@ const Works = () => {
     return (
         <div>
             <motion.div variants={
-                textVariant(0)
+                textVariant()
             }>
                 <p className={
                     `${

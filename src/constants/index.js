@@ -107,7 +107,8 @@ const projects = [
         ],
         image: anon_exchange,
         source_code_link: "https://github.com/bedead/Anon-Exchange-chatting",
-        date: 'August 2023'
+        date: 'August 2023',
+        link_type: 'github',
     },
     {
         name: "Banana disease classification",
@@ -125,7 +126,8 @@ const projects = [
         ],
         image: banana_classification,
         source_code_link: "https://colab.research.google.com/drive/1TLumA28dCY-9_lzouIJtt2CsCjONGdNy?usp=sharing",
-        date: 'August 2023'
+        date: 'August 2023',
+        link_type: 'github',
     },
     {
         name: "PATENT - CLASSIFICATION OF LUNG CANCER USING DEEP LEARNING TECHNIQUES.",
@@ -147,7 +149,8 @@ const projects = [
         ],
         image: yolo,
         source_code_link: "https://github.com/bedead/lung-cancer-classification-yoloV8---gradio.git",
-        date: 'June 2023'
+        date: 'June 2023',
+        link_type: 'github',
     },
     {
         name: "Face Detection",
@@ -169,7 +172,8 @@ const projects = [
         ],
         image: facedetection,
         source_code_link: "https://github.com/bedead/FACE-DETECTOR.git",
-        date: 'Feb 2023'
+        date: 'Feb 2023',
+        link_type: 'github',
     },
     {
         name: "Life Overseas",
@@ -187,7 +191,8 @@ const projects = [
         ],
         image: lifeoverseas,
         source_code_link: "https://github.com/bedead/Life-Overseas-webiste.git",
-        date: 'Jan 2023'
+        date: 'Jan 2023',
+        link_type: 'github',
     },
     {
         name: "Velox Todo",
@@ -209,7 +214,8 @@ const projects = [
         ],
         image: velox,
         source_code_link: "https://github.com/bedead/Velox-Todo-Application.git",
-        date: 'Sep 2022'
+        date: 'Sep 2022',
+        link_type: 'github',
     },
     {
         name: "HI",
@@ -227,7 +233,8 @@ const projects = [
         ],
         image: hi,
         source_code_link: "https://github.com/bedead/HI_2021.12.22.4.git",
-        date: 'Mar 2022'
+        date: 'Mar 2022',
+        link_type: 'github',
     },
     {
         name: "Lang go",
@@ -249,7 +256,8 @@ const projects = [
         ],
         image: langgo,
         source_code_link: "https://github.com/bedead/kivymd-language-translation-app.git",
-        date: 'Mar 2022'
+        date: 'Mar 2022',
+        link_type: 'github',
     },
     {
         name: "Shape out",
@@ -267,7 +275,8 @@ const projects = [
         ],
         image: shapeout,
         source_code_link: "https://www.amazon.com/Bedead-Shape-Out-2d-platformer/dp/B0999LHBYN",
-        date: 'Aug 2021'
+        date: 'Aug 2021',
+        link_type: 'github',
     },
 ];
 
