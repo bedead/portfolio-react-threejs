@@ -127,7 +127,7 @@ const projects = [
         image: banana_classification,
         source_code_link: "https://colab.research.google.com/drive/1TLumA28dCY-9_lzouIJtt2CsCjONGdNy?usp=sharing",
         date: 'August 2023',
-        link_type: 'github',
+        link_type: 'colab',
     },
     {
         name: "PATENT - CLASSIFICATION OF LUNG CANCER USING DEEP LEARNING TECHNIQUES.",
@@ -150,7 +150,7 @@ const projects = [
         image: yolo,
         source_code_link: "https://github.com/bedead/lung-cancer-classification-yoloV8---gradio.git",
         date: 'June 2023',
-        link_type: 'github',
+        link_type: 'huggingface',
     },
     {
         name: "Face Detection",
@@ -276,7 +276,7 @@ const projects = [
         image: shapeout,
         source_code_link: "https://www.amazon.com/Bedead-Shape-Out-2d-platformer/dp/B0999LHBYN",
         date: 'Aug 2021',
-        link_type: 'github',
+        link_type: 'appstore',
     },
 ];
 
