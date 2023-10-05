@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "2.2",
+  "version": "2.3",
   "type": "module",
   "homepage": "https://bedead.github.io/portfolio-react-threejs/",
   "scripts": {
