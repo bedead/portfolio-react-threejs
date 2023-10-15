@@ -85,8 +85,33 @@ import velox from '../assets/project/velox.webp'
 import yolo from '../assets/project/yolo.webp'
 import anon_exchange from '../assets/project/anon_exchange.webp'
 import banana_classification from '../assets/project/banana_class.webp'
+import convogen from '../assets/project/convogen.webp'
+
 
 const projects = [
+    {
+        name: "ConvoGen AI",
+        description:
+            "'ConvoGen' is the virtual embodiment of me, a chatbot that offers lifelike insights and information about my experiences, interests, and personality. Engage in conversations that feel as real as speaking with me in person, as 'ConvoGen' shares a wealth of personal details and knowledge, creating a truly immersive and authentic chatbot experience.",
+        tags: [
+            {
+                name: "T5 model",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Transformer",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Colab",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: convogen,
+        source_code_link: "https://colab.research.google.com/drive/1a6LATySYKaS8qqfk_4maSaV4guvTRA-8?usp=sharing",
+        date: 'October 2023',
+        link_type: 'colab',
+    },
     {
         name: "Anon Exchange - Anonymous chatting app",
         description:
