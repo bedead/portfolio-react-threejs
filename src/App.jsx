@@ -1,47 +1,24 @@
-import {BrowserRouter} from "react-router-dom";
-import {Suspense, lazy} from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Navbar = lazy(() => import ("./components/NavBar"));
-const Hero = lazy(() => import ("./components/Hero"));
-const About = lazy(() => import ("./components/About"));
-const Works = lazy(() => import ("./components/Works"));
-const Experience = lazy(() => import ("./components/Experience"));
-const Tech = lazy(() => import ("./components/Tech"));
-const Contact = lazy(() => import ("./components/Contact"));
 
-import load from './assets/anim-bg.gif'
+import Home from "./pages/Home";
+import Certificate from "./pages/Certificate";
+import Resume from "./pages/Resume";
 
-const renderLoader = () => {
-    return (
-        <div className="h-screen flex justify-center items-center">
-            <img src={load}
-                className="w-[150px] h-[117px] "/>
-        </div>
-    )
-}
 
 function App() {
     return (
         <BrowserRouter>
-            <Suspense fallback={
-                renderLoader()
-            }>
-                <div className="relative z-0 bg-primary">
-                    <div className=" ">
-                        <Navbar/>
-                        <Hero/>
-                    </div>
-                    <About/>
-                    <Experience/>
-                    <Tech/>
-                    <Works/>
-                    <div className="relative z-10">
-                        <Contact/>
-                    </div>
-                </div>
-            </Suspense>
+            <Routes>
+
+                <Route path="/portfolio-react-threejs/" index element={<Home />} />
+                <Route path="/portfolio-react-threejs/certificate" element={<Certificate />} />
+                <Route path="/portfolio-react-threejs/resume" element={<Resume />} />
+
+            </Routes>
         </BrowserRouter>
     )
 }
+
 
 export default App

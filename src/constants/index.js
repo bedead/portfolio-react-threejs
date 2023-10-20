@@ -20,12 +20,16 @@ const navLinks = [
         title: "Projects",
     },
     {
-        id: "contact",
-        title: "Contact",
+        id: "certificate",
+        title: "Certificates",
     },
     {
-        id: "coming_soon",
-        title: "Coming soon",
+        id: "resume",
+        title: "Resume",
+    },
+    {
+        id: "contact",
+        title: "Contact",
     },
 ];
 
