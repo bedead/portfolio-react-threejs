@@ -17,7 +17,7 @@ const NavBar = () => {
             } w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-b from-white to-primary`
         }>
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <Link to='/' className="flex items-center gap-2"
+                <Link to='/portfolio-react-threejs' className="flex items-center gap-2"
                     onClick={
                         () => {
                             setActive("");
@@ -35,7 +35,7 @@ const NavBar = () => {
                         <span className="text-[18px] sm:block hidden">| Bedead</span>
                     </div>
                 </Link>
-                <ul className="list-none hidden sm:flex space-x-4 md:space-x-0 lg:space-x-7 flex-row md:gap-4 lg:gap-10">
+                <ul className="list-none hidden sm:flex flex-row md:gap-4 lg:gap-10">
                     {
                         navLinks.map((link) => (
                             <li key={
@@ -50,7 +50,7 @@ const NavBar = () => {
                                     () => setActive(link.title)
                                 }>
                                 <a href={
-                                    (link.id == 'certificate' || link.id == 'resume') ? `/portfolio-react-threejs/${link.id}` : `/portfolio-react-threejs/#${link.id
+                                    (link.id == 'certificate' || link.id == 'resume' || link.id == 'blogs') ? `/portfolio-react-threejs/${link.id}` : `/portfolio-react-threejs/#${link.id
                                         }`
                                 }>
                                     {
@@ -74,7 +74,7 @@ const NavBar = () => {
                     <div className={
                         `${!toggle ? 'hidden' : 'flex'
                         } p-6 bg-gradient-to-r from-[#f6f6f6] to-white absolute
-                    top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `
+                    top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl outline`
                     }>
                         <ul className="list-none flex justify-end items-start flex-col gap-2">
                             {
@@ -84,8 +84,7 @@ const NavBar = () => {
                                     }
                                         className={
                                             `${active == link.title ? "text-black" : "text-secondary"
-                                            }
-                            font-poppins font-medium cursor-pointer text-[16px] hover:text-black`
+                                            } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
                                         }
                                         onClick={
                                             () => {
@@ -94,8 +93,8 @@ const NavBar = () => {
                                             }
                                         }>
                                         <a href={
-                                            `#${link.id
-                                            }`
+                                            (link.id == 'certificate' || link.id == 'resume' || link.id == 'blogs') ? `/portfolio-react-threejs/${link.id}` : `/portfolio-react-threejs/#${link.id
+                                                }`
                                         }>
                                             {
                                                 link.title

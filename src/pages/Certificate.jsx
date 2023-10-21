@@ -1,7 +1,9 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import load from '../assets/anim-bg.gif'
+import ComingSoon from '../components/ComingSoon';
+
 
 
 
@@ -22,10 +24,11 @@ export default function Certificate() {
         <Suspense fallback={
             renderLoader()
         }>
-            <div className="relative z-0 bg-primary">
+            <div className="relative bg-primary">
                 <NavBar />
-                
             </div>
+            <ComingSoon />
+
         </Suspense>
     )
 }

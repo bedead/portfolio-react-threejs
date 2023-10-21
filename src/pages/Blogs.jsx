@@ -18,7 +18,7 @@ const renderLoader = () => {
 
 
 
-export default function Resume() {
+export default function Blogs() {
     return (
         <Suspense fallback={
             renderLoader()

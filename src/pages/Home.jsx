@@ -1,8 +1,5 @@
-import { Suspense, lazy } from "react";
-
+import { Suspense } from "react";
 import load from '../assets/anim-bg.gif'
-
-
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -29,7 +26,7 @@ export default function Home() {
             renderLoader()
         }>
             <div className="relative z-0 bg-primary">
-                <div className=" ">
+                <div>
                     <NavBar />
                     <Hero />
                 </div>

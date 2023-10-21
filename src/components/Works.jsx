@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 import { Tilt } from "react-tilt";
 
 
@@ -27,9 +26,11 @@ const ProjectCard = ({
     return (
         <motion.div>
             <div>
-                <motion.div variants={
-                    fadeIn('right', 'spring', 0.5 * index, 0.75)
-                }>
+                <motion.div 
+                // variants={
+                //     fadeIn('right', 'spring', 0.5 * index, 0.75)
+                // }
+                >
                     <Tilt options={
                         {
                             max: 45,
@@ -92,9 +93,10 @@ const ProjectCard = ({
 const Works = () => {
     return (
         <div>
-            <motion.div variants={
-                textVariant()
-            }>
+            <motion.div 
+            // variants={
+            //     textVariant()}
+                >
                 <p className={
                     `${styles.sectionSubText
                     } text-center`
@@ -105,9 +107,10 @@ const Works = () => {
                 }>Projects.</h2>
             </motion.div>
 
-            <motion.div variants={
-                fadeIn('', '', 0.1, 1)
-            }
+            <motion.div 
+            // variants={
+            //     fadeIn('', '', 0.1, 1)
+            // }
                 className='w-full flex'>
                 <p className='mt-3 text-secondary text-center text-[17px] max-w-full leading-[30px]'>
                     The projects that are listed below provide examples of my work in the real world, showcasing my abilities and experience. Each project has a brief description, links to code repositories, and live demonstrations. It exhibits my ability to work with various technologies, manage projects efficiently, and solve complex problems.

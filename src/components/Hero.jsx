@@ -12,7 +12,7 @@ const Hero = () => {
             <div className={
                 `${
                     styles.paddingX
-                } flex absolute z-10  inset-0 top-[120px] items-start gap-5`
+                } flex absolute z-10 inset-0 top-[120px] items-start gap-5`
             }>
                 <div className="flex flex-col justify-center items-center mt-5">
                     <div className="w-5 h-5 rounded-full bg-[#373737] "/>
