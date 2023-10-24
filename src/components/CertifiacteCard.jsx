@@ -1,27 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
-import { Tilt } from "react-tilt";
 
 
-// source link icons
-import github from '../assets/icons/github.webp'
-import appstore from '../assets/icons/appstore.png'
-import colab from '../assets/icons/colab.png'
-import huggingface from '../assets/icons/huggingface.png'
-
-
-const ProjectCard = ({
+const CertificateCard = ({
     index,
-    name,
-    description,
-    tags,
     image,
-    source_code_link,
-    date,
-    link_type
 }) => {
     return (
         <motion.div>
@@ -90,46 +71,4 @@ const ProjectCard = ({
     );
 };
 
-const Works = () => {
-    return (
-        <div>
-            <motion.div
-            // variants={
-            //     textVariant()}
-            >
-                <p className={
-                    `${styles.sectionSubText
-                    } text-center`
-                }>My works?</p>
-                <h2 className={
-                    `${styles.sectionHeadText
-                    } text-center`
-                }>Projects.</h2>
-            </motion.div>
-
-            <motion.div
-                // variants={
-                //     fadeIn('', '', 0.1, 1)
-                // }
-                className='w-full flex'>
-                <p className='mt-3 text-secondary text-center text-[17px] max-w-full leading-[30px]'>
-                    The projects that are listed below provide examples of my work in the real world, showcasing my abilities and experience. Each project has a brief description, links to code repositories, and live demonstrations. It exhibits my ability to work with various technologies, manage projects efficiently, and solve complex problems.
-                </p>
-            </motion.div>
-
-            <div className=' mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
-                {
-                    projects.map((project, index) => (
-
-                        <ProjectCard key={
-                            `project-${index}`
-                        }
-                            index={index}
-                            {...project} />
-                    ))
-                } </div>
-        </div>
-    );
-};
-
-export default SectionWrapper(Works, "project");
+export default CertificateCard;

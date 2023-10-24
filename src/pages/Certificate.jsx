@@ -1,8 +1,9 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import { Suspense } from "react";
-import load from '../assets/anim-bg.gif'
+import load from '../assets/loader/anim-bg.gif'
 import ComingSoon from '../components/ComingSoon';
+import CertificateLists from '../components/CertificateLists';
 
 
 
@@ -28,7 +29,7 @@ export default function Certificate() {
                 <NavBar />
             </div>
             <ComingSoon />
-
+            <CertificateLists />
         </Suspense>
     )
 }

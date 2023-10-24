@@ -1,5 +1,6 @@
 import { Suspense } from "react";
-import load from '../assets/anim-bg.gif'
+import load from '../assets/loader/anim-bg.gif'
+
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import About from "../components/About";

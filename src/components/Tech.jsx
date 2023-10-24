@@ -3,7 +3,7 @@ import React from "react";
 import { SectionWrapper } from "../hoc";
 // import { technologies } from "../constants";
 import BallCanvas from './canvas/Ball'
-import texture from '../assets/texture.webp'
+import texture from '../assets/general/texture.webp'
 import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { motion } from "framer-motion";

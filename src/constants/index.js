@@ -1,8 +1,12 @@
-import web from '../assets/web.webp'
-import mobile from '../assets/mobile.webp'
-import creator from '../assets/creator.webp'
+import web from '../assets/general/web.webp'
+import mobile from '../assets/general/mobile.webp'
+import creator from '../assets/general/creator.webp'
 
 const navLinks = [
+    {
+        id: "tools",
+        title: "Tools",
+    },
     {
         id: "about",
         title: "About",
@@ -314,4 +318,25 @@ const projects = [
 ];
 
 
-export { navLinks, services, experiences, projects };
+
+
+
+const certificate = [
+    {
+        image: ""
+    },
+    {
+        image: ""
+    },
+    {
+        image: ""
+    },
+    {
+        image: ""
+    },
+    {
+        image: ""
+    },
+]
+
+export { navLinks, services, experiences, projects, certificate };

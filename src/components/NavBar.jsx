@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import { styles } from '../styles'
 import { navLinks } from "../constants";
-import logo_white from '../assets/logo-white.webp'
-import menu from '../assets/menu.webp'
-import close from '../assets/close.webp'
+import logo_white from '../assets/logo/logo-white.webp'
+import menu from '../assets/general/menu.webp'
+import close from '../assets/general/close.webp'
 
 const NavBar = () => {
     const [active, setActive] = useState('');
@@ -35,7 +35,7 @@ const NavBar = () => {
                         <span className="text-[18px] sm:block hidden">| Bedead</span>
                     </div>
                 </Link>
-                <ul className="list-none hidden sm:flex flex-row md:gap-4 lg:gap-10">
+                <ul className="list-none hidden sm:flex flex-row md:gap-4">
                     {
                         navLinks.map((link) => (
                             <li key={
@@ -44,7 +44,7 @@ const NavBar = () => {
                                 className={
                                     `${active == link.title ? "text-black" : "text-secondary"
                                     }
-                            hover:text-black hover:underline underline-offset-8  text-[18px] font-medium cursor-pointer`
+                            hover:text-black hover:underline underline-offset-8 text-[18px] font-medium cursor-pointer`
                                 }
                                 onClick={
                                     () => setActive(link.title)
