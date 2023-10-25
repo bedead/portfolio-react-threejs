@@ -3,7 +3,7 @@ import { styles } from "../styles";
 
 export default function ComingSoon() {
     return (
-        <div className='absolute top-[120px] inset-0'>
+        <div className='h-screen'>
             <h1 className={
                 `${styles.sectionHeadText
                 } text-center`

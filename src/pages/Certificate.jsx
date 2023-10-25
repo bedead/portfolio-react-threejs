@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import load from '../assets/loader/anim-bg.gif'
 import ComingSoon from '../components/ComingSoon';
 import CertificateLists from '../components/CertificateLists';
+import Contact from '../components/Contact';
 
 
 
@@ -25,11 +26,12 @@ export default function Certificate() {
         <Suspense fallback={
             renderLoader()
         }>
-            <div className="relative bg-primary">
+            <div className='bg-white'>
                 <NavBar />
+                <div className='relative pb-10 top-[120px] lg:top-[100px] bg-gradient-to-b from-white to-primary'>
+                    <CertificateLists />
+                </div>
             </div>
-            <ComingSoon />
-            <CertificateLists />
-        </Suspense>
+        </Suspense >
     )
 }

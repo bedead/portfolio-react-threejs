@@ -4,10 +4,6 @@ import creator from '../assets/general/creator.webp'
 
 const navLinks = [
     {
-        id: "tools",
-        title: "Tools",
-    },
-    {
         id: "about",
         title: "About",
     },
@@ -61,19 +57,17 @@ import msc from '../assets/experience/msc.webp'
 
 const experiences = [
     {
-        title: "V open source member",
-        company_name: "CSI Chapter",
-        icon: csi,
+        title: "Content Writer",
+        company_name: "Techyv",
+        icon: "",
         iconBg: "black",
-        date: "Augest 2021 - June 2022",
+        date: "November 2023 - Ongoing",
         points: [
-            "Conducting regular meetings to discuss open source projects and new initiatives.",
-            "Conducting workshops and training sessions to help members learn more about open source technologies.",
-            "Coordinating with other teams within the CSI chapter to ensure smooth execution of events."
+
         ],
     },
     {
-        title: "Technical member ",
+        title: "Technical member",
         company_name: "Microsoft Student Chapter",
         icon: msc,
         iconBg: "black",
@@ -85,7 +79,18 @@ const experiences = [
             "Debugging any issues or errors that arise on the website and working to resolve them."
         ],
     },
-
+    {
+        title: "V open source member",
+        company_name: "CSI Chapter",
+        icon: csi,
+        iconBg: "black",
+        date: "Augest 2021 - June 2022",
+        points: [
+            "Conducting regular meetings to discuss open source projects and new initiatives.",
+            "Conducting workshops and training sessions to help members learn more about open source technologies.",
+            "Coordinating with other teams within the CSI chapter to ensure smooth execution of events."
+        ],
+    },
 ];
 
 import shapeout from '../assets/project/shapeout.webp'
@@ -318,25 +323,85 @@ const projects = [
 ];
 
 
+import one from '../assets/certificates/courses/1.png'
+import two from '../assets/certificates/courses/2.png'
+import three from '../assets/certificates/courses/3.png'
+import four from '../assets/certificates/courses/4.png'
+import five from '../assets/certificates/courses/5.png'
+import six from '../assets/certificates/courses/6.png'
+import seven from '../assets/certificates/courses/7.png'
+import eight from '../assets/certificates/courses/8.png'
+import nine from '../assets/certificates/courses/9.png'
 
-
-
-const certificate = [
+const CourseCertificate = [
     {
-        image: ""
+        name: "Basics of Machien Learing",
+        image: one
     },
     {
-        image: ""
+        name: "C++ Course",
+        image: two
     },
     {
-        image: ""
+        name: "Making a Webiste",
+        image: three
     },
     {
-        image: ""
+        name: "Java (Basics)",
+        image: four
     },
     {
-        image: ""
+        name: "Matlab Onramp",
+        image: five
+    },
+    {
+        name: "MongoDB Tutorial",
+        image: six
+    },
+    {
+        name: "Python (Basics)",
+        image: seven
+    },
+    {
+        name: "Responsive Web Design Course",
+        image: eight
+    },
+    {
+        name: "TensorFlow Python",
+        image: nine
     },
 ]
 
-export { navLinks, services, experiences, projects, certificate };
+import work_1 from '../assets/certificates/works/1.png'
+import work_2 from '../assets/certificates/works/2.png'
+
+const WorkCertificate = [
+    {
+        name: "Technical Member | CSI ",
+        image: work_1
+    },
+    {
+        name: "Technical Member | MSC",
+        image: work_2
+    },
+]
+
+const blogs = [
+    {
+        name: "",
+        description: "",
+        link: ""
+    },
+    {
+        name: "",
+        description: "",
+        link: ""
+    },
+    {
+        name: "",
+        description: "",
+        link: ""
+    }
+]
+
+export { navLinks, services, experiences, projects, CourseCertificate, WorkCertificate, blogs };

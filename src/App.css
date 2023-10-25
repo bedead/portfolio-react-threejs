@@ -1,34 +1,45 @@
 #root {
-    max - width : 1280 px;
-    margin : 0 auto;
-    padding : 2 rem;
-    text - align : center;
-}.logo {
-    height : 6e m;
-    padding : 1.5e m;
-    will - change : filter;
-    transition : filter 300 ms;
-}.logo : hover {
-    filter : drop - shadow(0 0 2e m #646cffaa);
-}.logo.react : hover {
-    filter : drop - shadow(0 0 2e m #61dafbaa);
+    max-width: 1280 px;
+    margin: 0 auto;
+    padding: 2 rem;
+    text-align: center;
 }
 
-@keyframes logo - spin {
+.logo {
+    height: 6e m;
+    padding: 1.5e m;
+    will-change: filter;
+    transition: filter 300 ms;
+}
+
+.logo :hover {
+    filter: drop - shadow(0 0 2e m #646cffaa);
+}
+
+.logo.react :hover {
+    filter: drop - shadow(0 0 2e m #61dafbaa);
+}
+
+@keyframes logo-spin {
     from {
-        transform : rotate(0 deg);
+        transform: rotate(0 deg);
     }
+
     to {
-        transform : rotate(360 deg);
+        transform: rotate(360 deg);
     }
 }
 
-@media(prefers - reduced - motion : no - preference) {
-    a : nth - of - type(2).logo {
-        animation : logo - spin infinite 20 s linear;
+@media(prefers-reduced-motion :no-preference) {
+    a:nth-of-type(2).logo {
+        animation: logo - spin infinite 20 s linear;
     }
-}.card {
-    padding : 2e m;
-}.read - the - docs {
-    color : #888;
+}
+
+.card {
+    padding: 2e m;
+}
+
+.read-the-docs {
+    color: #888;
 }

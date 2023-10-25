@@ -23,10 +23,12 @@ export default function Blogs() {
         <Suspense fallback={
             renderLoader()
         }>
-            <div className="relative bg-primary">
+            <div className='bg-white'>
                 <NavBar />
+                <div className='relative top-[120px] lg:top-[100px] bg-gradient-to-b from-white to-primary'>
+                    <ComingSoon />
+                </div>
             </div>
-            <ComingSoon />
         </Suspense>
     )
 }

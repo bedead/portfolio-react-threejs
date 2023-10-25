@@ -26,16 +26,14 @@ export default function Home() {
         <Suspense fallback={
             renderLoader()
         }>
-            <div className="relative z-0 bg-primary">
-                <div>
-                    <NavBar />
+            <div className=" z-0 bg-white">
+                <NavBar />
+                <div className="bg-gradient-to-b from-white to-primary">
                     <Hero />
-                </div>
-                <About />
-                <Experience />
-                <Tech />
-                <Works />
-                <div className="relative z-10">
+                    <About />
+                    <Experience />
+                    <Tech />
+                    <Works />
                     <Contact />
                 </div>
             </div>
