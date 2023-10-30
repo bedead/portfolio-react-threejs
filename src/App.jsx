@@ -11,10 +11,10 @@ function App() {
     return (
         <BrowserRouter basename="/portfolio-react-threejs">
             <Routes>
-                <Route path="/portfolio-react-threejs/" index element={<Home />} />
-                <Route path="/portfolio-react-threejs/certificate" element={<Certificate />} />
-                <Route path="/portfolio-react-threejs/resume" element={<Resume />} />
-                <Route path="/portfolio-react-threejs/blogs" element={<Blogs />} />
+                <Route index element={<Home />} />
+                <Route path="/certificate" element={<Certificate />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/blogs" element={<Blogs />} />
             </Routes>
         </BrowserRouter>
     )
