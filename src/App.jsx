@@ -9,9 +9,9 @@ import Blogs from "./pages/Blogs";
 
 function App() {
     return (
-        <BrowserRouter basename="/">
+        <BrowserRouter basename="/portfolio-react-threejs">
             <Routes>
-                <Route path="/portfolio-react-threejs/" element={<Home />} />
+                <Route path="/portfolio-react-threejs/" index element={<Home />} />
                 <Route path="/portfolio-react-threejs/certificate" element={<Certificate />} />
                 <Route path="/portfolio-react-threejs/resume" element={<Resume />} />
                 <Route path="/portfolio-react-threejs/blogs" element={<Blogs />} />
