@@ -25,7 +25,7 @@ export default function Resume() {
         }>
             <div className='bg-white'>
                 <NavBar />
-                <div className='relative top-[120px] lg:top-[100px] bg-gradient-to-b from-white to-primary'>
+                <div className='relative pb-10 top-[120px] lg:top-[100px] bg-gradient-to-b from-white to-primary'>
                     <ComingSoon />
                 </div>
 

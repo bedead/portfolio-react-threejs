@@ -1,0 +1,36 @@
+import React from "react"
+import { blogs } from "../constants";
+import { styles } from "../styles";
+import BlogCard from "./BlogCard";
+
+
+
+export default function BlogLists() {
+    return (
+        <div className="my-10">
+
+            <div >
+                <h2 className={
+                    `${styles.sectionHeadText
+                    } text-center`
+                }>Blogs.</h2>
+                <p className={
+                    `${styles.sectionSubText
+                    } text-center`
+                }>Blogs written by me</p>
+            </div>
+            <div className='my-20 flex flex-wrap justify-center mx-auto space-x-5 gap-5 w-full'>
+                {
+                    blogs.map((project, index) => (
+
+                        <BlogCard key={
+                            `project-${index}`
+                        }
+                            index={index}
+                            {...project} />
+                    ))
+                } </div>
+        </div>
+    )
+}
+

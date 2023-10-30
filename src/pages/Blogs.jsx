@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import { Suspense, lazy } from "react";
 import load from '../assets/loader/anim-bg.gif'
 import ComingSoon from '../components/ComingSoon';
+import BlogLists from '../components/BlogLists';
 
 
 
@@ -25,8 +26,9 @@ export default function Blogs() {
         }>
             <div className='bg-white'>
                 <NavBar />
-                <div className='relative top-[120px] lg:top-[100px] bg-gradient-to-b from-white to-primary'>
-                    <ComingSoon />
+                <div className='relative pb-10 top-[120px] lg:top-[100px] bg-gradient-to-b from-white to-primary'>
+                    {/* <ComingSoon /> */}
+                    <BlogLists />
                 </div>
             </div>
         </Suspense>
