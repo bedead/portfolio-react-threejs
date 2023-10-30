@@ -1,9 +1,9 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "2.3",
+  "version": "2.5",
   "type": "module",
-  "homepage": "https://bedead.github.io/portfolio-react-threejs/",
+  "homepage": "https://bedead.github.io/portfolio-react-threejs",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

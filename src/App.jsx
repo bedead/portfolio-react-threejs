@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
 
 
 import Home from "./pages/Home";
@@ -9,15 +9,14 @@ import Blogs from "./pages/Blogs";
 
 function App() {
     return (
-        <HashRouter>
+        <BrowserRouter basename="/">
             <Routes>
-                <Route path="/portfolio-react-threejs/" index element={<Home />} />
+                <Route path="/portfolio-react-threejs/" element={<Home />} />
                 <Route path="/portfolio-react-threejs/certificate" element={<Certificate />} />
                 <Route path="/portfolio-react-threejs/resume" element={<Resume />} />
                 <Route path="/portfolio-react-threejs/blogs" element={<Blogs />} />
-
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
 
