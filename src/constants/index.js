@@ -54,16 +54,19 @@ const services = [
 
 import csi from '../assets/experience/csi.webp'
 import msc from '../assets/experience/msc.webp'
+import techyv from '../assets/experience/techyv.webp'
 
 const experiences = [
     {
         title: "Content Writer",
         company_name: "Techyv",
-        icon: "",
-        iconBg: "black",
+        icon: techyv,
+        iconBg: "white",
         date: "November 2023 - Ongoing",
         points: [
-
+            'Writing proffesional articles related to IT.',
+            'Ensuring use of no AI content in articles.',
+            'Creating articles on real facts and data.'
         ],
     },
     {
@@ -83,7 +86,7 @@ const experiences = [
         title: "V open source member",
         company_name: "CSI Chapter",
         icon: csi,
-        iconBg: "black",
+        iconBg: "white",
         date: "Augest 2021 - June 2022",
         points: [
             "Conducting regular meetings to discuss open source projects and new initiatives.",
