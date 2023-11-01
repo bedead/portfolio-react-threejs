@@ -17,7 +17,7 @@ const NavBar = () => {
             } w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-b from-white to-primary`
         }>
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <Link to='/portfolio-react-threejs' className="flex items-center gap-2"
+                <Link to='/portfolio-react-threejs/' className="flex items-center gap-2"
                     onClick={
                         () => {
                             setActive("");
