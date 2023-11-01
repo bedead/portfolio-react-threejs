@@ -17,7 +17,7 @@ const NavBar = () => {
             } w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-b from-white to-primary`
         }>
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <Link to='/portfolio-react-threejs/' className="flex items-center gap-2"
+                <Link to='/' className="flex items-center gap-2"
                     onClick={
                         () => {
                             setActive("");
@@ -49,13 +49,16 @@ const NavBar = () => {
                                 onClick={
                                     () => setActive(link.title)
                                 }>
-                                <a href={
-                                    (link.id == 'certificate' || link.id == 'resume' || link.id == 'blogs') ? `/portfolio-react-threejs/${link.id}` : `/portfolio-react-threejs/#${link.id
-                                        }`
-                                }>
-                                    {
-                                        link.title
-                                    } </a>
+
+                                {link.type == 'route' ? (
+                                    <Link to={`/${link.id}`}>
+                                        {
+                                            link.title
+                                        } </Link>
+                                ) : (
+                                    <Link to='/'><a href={`#${link.id}`} > {link.title} </a> </Link>
+                                )}
+
                             </li>
                         ))
                     } </ul>
@@ -92,13 +95,14 @@ const NavBar = () => {
                                                 setActive(link.title);
                                             }
                                         }>
-                                        <a href={
-                                            (link.id == 'certificate' || link.id == 'resume' || link.id == 'blogs') ? `/portfolio-react-threejs/${link.id}` : `/portfolio-react-threejs/#${link.id
-                                                }`
-                                        }>
-                                            {
-                                                link.title
-                                            } </a>
+                                        {link.id == 'certificate' || link.id == 'resume' || link.id == 'blogs' ? (
+                                            <Link to={`/${link.id}`}>
+                                                {
+                                                    link.title
+                                                } </Link>
+                                        ) : (
+                                            <a href={`#${link.id}`}> {link.title} </a>
+                                        )}
                                     </li>
                                 ))
                             } </ul>

@@ -6,34 +6,42 @@ const navLinks = [
     {
         id: "about",
         title: "About",
+        type: "anchor"
     },
     {
         id: "work",
         title: "Work",
+        type: "anchor"
     },
     {
         id: "skills",
         title: "Skills",
+        type: "anchor"
     },
     {
         id: "project",
         title: "Projects",
+        type: "anchor"
     },
     {
         id: "certificate",
         title: "Certificates",
+        type: "route"
     },
     {
         id: "resume",
         title: "Resume",
+        type: "route"
     },
     {
         id: "blogs",
         title: "Blogs",
+        type: "route"
     },
     {
         id: "contact",
         title: "Contact",
+        type: "anchor"
     },
 ];
 

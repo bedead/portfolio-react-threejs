@@ -9,7 +9,7 @@ import Blogs from "./pages/Blogs";
 
 function App() {
     return (
-        <BrowserRouter basename="/portfolio-react-threejs">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
                 <Route index element={<Home />} />
                 <Route path="/certificate" element={<Certificate />} />
