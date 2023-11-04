@@ -4,24 +4,9 @@ import creator from '../assets/general/creator.webp'
 
 const navLinks = [
     {
-        id: "about",
-        title: "About",
-        type: "anchor"
-    },
-    {
-        id: "work",
-        title: "Work",
-        type: "anchor"
-    },
-    {
-        id: "skills",
-        title: "Skills",
-        type: "anchor"
-    },
-    {
-        id: "project",
-        title: "Projects",
-        type: "anchor"
+        id: "",
+        title: "Home",
+        type: "route"
     },
     {
         id: "certificate",
@@ -41,7 +26,7 @@ const navLinks = [
     {
         id: "contact",
         title: "Contact",
-        type: "anchor"
+        type: "route"
     },
 ];
 

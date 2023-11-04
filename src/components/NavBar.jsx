@@ -49,16 +49,10 @@ const NavBar = () => {
                                 onClick={
                                     () => setActive(link.title)
                                 }>
-
-                                {link.type == 'route' ? (
-                                    <Link to={`/${link.id}`}>
-                                        {
-                                            link.title
-                                        } </Link>
-                                ) : (
-                                    <a href={`/portfolio-react-threejs#${link.id}`} > {link.title} </a>
-                                )}
-
+                                <Link to={`/${link.id}`}>
+                                    {
+                                        link.title
+                                    } </Link>
                             </li>
                         ))
                     } </ul>

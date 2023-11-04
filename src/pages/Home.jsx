@@ -34,7 +34,6 @@ export default function Home() {
                     <Experience />
                     <Tech />
                     <Works />
-                    <Contact />
                 </div>
             </div>
         </Suspense>
