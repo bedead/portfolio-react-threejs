@@ -56,7 +56,7 @@ const NavBar = () => {
                                             link.title
                                         } </Link>
                                 ) : (
-                                    <a href={`#${link.id}`} > {link.title} </a>
+                                    <a href={`/portfolio-react-threejs#${link.id}`} > {link.title} </a>
                                 )}
 
                             </li>
