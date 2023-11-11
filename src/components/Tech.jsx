@@ -11,24 +11,25 @@ import { motion } from "framer-motion";
 const Tech = () => {
     return (
         <div className='flex flex-row flex-wrap justify-center items-center gap-10'>
-            <motion.div 
-            variants={
-                textVariant()
-            }>
-                <p className={
-                    `${styles.sectionSubText
-                    } text-center`
+            <motion.div
+                variants={
+                    textVariant()
                 }>
-                    What have i learnd?
-                </p>
                 <h2 className={
                     `${styles.sectionHeadText
                     } text-center`
                 }>
                     Skills & Technologies.
                 </h2>
+                <p className={
+                    `${styles.sectionSubText
+                    } text-center`
+                }>
+                    What have i learnd?
+                </p>
+
             </motion.div>
-            <div className='lg:w-[500px] lg:h-[500px]' key='skillsBall'>
+            <div className='lg:w-[400px] lg:h-[400px]' key='skillsBall'>
                 <BallCanvas icon={texture} />
             </div>
         </div>

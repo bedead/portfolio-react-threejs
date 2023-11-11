@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
+import { textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
 
 
@@ -94,17 +95,22 @@ const Works = () => {
     return (
         <div>
             <motion.div
-            // variants={
-            //     textVariant()}
-            >
-                <p className={
-                    `${styles.sectionSubText
-                    } text-center`
-                }>My works?</p>
+                // variants={
+                //     textVariant(0)
+                // } 
+                >
                 <h2 className={
                     `${styles.sectionHeadText
                     } text-center`
-                }>Projects.</h2>
+                }>
+                    Projects.
+                </h2>
+                <p className={
+                    `${styles.sectionSubText
+                    } text-center`
+                }>
+                    My works?
+                </p>
             </motion.div>
 
             <motion.div
