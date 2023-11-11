@@ -8,6 +8,7 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import FreeTools from "./pages/FreeTools";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/skills" element={<Skills />} />
+                <Route path="/freetools" element={<FreeTools />} />
                 <Route path="*" element={<Contact />} />
             </Routes>
         </BrowserRouter>
