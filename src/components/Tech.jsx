@@ -1,7 +1,6 @@
 import React from "react";
 
 import { SectionWrapper } from "../hoc";
-// import { technologies } from "../constants";
 import BallCanvas from './canvas/Ball'
 import texture from '../assets/general/texture.webp'
 import { textVariant } from "../utils/motion";
@@ -29,7 +28,7 @@ const Tech = () => {
                     Skills & Technologies.
                 </h2>
             </motion.div>
-            <div className='lg:w-96 lg:h-96' key='skillsBall'>
+            <div className='lg:w-[500px] lg:h-[500px]' key='skillsBall'>
                 <BallCanvas icon={texture} />
             </div>
         </div>

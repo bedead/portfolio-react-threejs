@@ -1,9 +1,13 @@
 import { styles } from "../styles";
+import { textVariant } from "../utils/motion";
+import { motion } from "framer-motion";
 
 
 export default function ComingSoon() {
     return (
-        <div className='h-screen'>
+        <motion.div variants={
+            textVariant(0)
+        } className='h-screen '>
             <h1 className={
                 `${styles.sectionHeadText
                 } text-center`
@@ -16,6 +20,6 @@ export default function ComingSoon() {
             }>
                 More things are on the ways.
             </p>
-        </div>
+        </motion.div>
     )
 }

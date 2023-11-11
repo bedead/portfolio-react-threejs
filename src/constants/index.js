@@ -9,6 +9,16 @@ const navLinks = [
         type: "route"
     },
     {
+        id: "projects",
+        title: "Projects",
+        type: "route"
+    },
+    {
+        id: "skills",
+        title: "Skills",
+        type: "route"
+    },
+    {
         id: "certificate",
         title: "Certificates",
         type: "route"

@@ -6,6 +6,8 @@ import Certificate from "./pages/Certificate";
 import Resume from "./pages/Resume";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
 
 
 function App() {
@@ -17,6 +19,9 @@ function App() {
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/blogs" element={<Blogs />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="*" element={<Contact />} />
             </Routes>
         </BrowserRouter>
     )

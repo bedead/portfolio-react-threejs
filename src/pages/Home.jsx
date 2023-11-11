@@ -7,7 +7,6 @@ import About from "../components/About";
 import Experience from "../components/Experience";
 import Tech from "../components/Tech";
 import Works from "../components/Works";
-import Contact from "../components/Contact";
 
 
 const renderLoader = () => {
@@ -32,8 +31,6 @@ export default function Home() {
                     <Hero />
                     <About />
                     <Experience />
-                    <Tech />
-                    <Works />
                 </div>
             </div>
         </Suspense>

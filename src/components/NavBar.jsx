@@ -89,14 +89,10 @@ const NavBar = () => {
                                                 setActive(link.title);
                                             }
                                         }>
-                                        {link.id == 'certificate' || link.id == 'resume' || link.id == 'blogs' ? (
-                                            <Link to={`/${link.id}`}>
-                                                {
-                                                    link.title
-                                                } </Link>
-                                        ) : (
-                                            <a href={`#${link.id}`}> {link.title} </a>
-                                        )}
+                                        <Link to={`/${link.id}`}>
+                                            {
+                                                link.title
+                                            } </Link>
                                     </li>
                                 ))
                             } </ul>
