@@ -34,7 +34,7 @@ const navLinks = [
         type: "route"
     },
     {
-        id: "tools",
+        id: "freetools",
         title: "Free Tools",
         type: "route"
     },
