@@ -34,15 +34,33 @@ const navLinks = [
         type: "route"
     },
     {
-        id: "freetools",
-        title: "Free Tools",
-        type: "route"
-    },
-    {
         id: "contact",
         title: "Contact",
         type: "route"
     },
+    {
+        id: "freetools",
+        title: "Free Tools",
+        type: "tools"
+    },
+];
+
+const toolLinks = [
+    {
+        id: "imageupscaler",
+        title: "Image Upscaler",
+        type: "image"
+    },
+    // {
+    //     id: "imageupscaler",
+    //     title: "Image Upscaler",
+    //     type: "tools"
+    // },
+    // {
+    //     id: "imageupscaler",
+    //     title: "Image Upscaler",
+    //     type: "tools"
+    // },
 ];
 
 const services = [
@@ -70,7 +88,7 @@ const experiences = [
         company_name: "Techyv",
         icon: techyv,
         iconBg: "white",
-        date: "November 2023 - Ongoing",
+        date: "October 2023 - Ongoing",
         points: [
             'Writing proffesional articles related to IT.',
             'Ensuring use of no AI content in articles.',
@@ -415,4 +433,4 @@ const blogs = [
     }
 ]
 
-export { navLinks, services, experiences, projects, CourseCertificate, WorkCertificate, blogs };
+export { navLinks, toolLinks, services, experiences, projects, CourseCertificate, WorkCertificate, blogs };

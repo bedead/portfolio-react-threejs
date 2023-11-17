@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import FreeTools from "./pages/FreeTools";
+import NoPageFound from "./pages/NoPageFound";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/freetools" element={<FreeTools />} />
-                <Route path="*" element={<Contact />} />
+                <Route path="*" element={<NoPageFound />} />
             </Routes>
         </BrowserRouter>
     )

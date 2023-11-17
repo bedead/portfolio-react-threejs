@@ -18,7 +18,7 @@ export default function ComingSoon() {
                 `${styles.heroSubText
                 } mt-2 text-black-100 text-center`
             }>
-                More things are on the ways.
+                More things are on the way ✌️.
             </p>
         </motion.div>
     )
