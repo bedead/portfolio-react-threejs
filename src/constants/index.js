@@ -334,15 +334,15 @@ const projects = [
 ];
 
 
-import one from '../assets/certificates/courses/1.png'
-import two from '../assets/certificates/courses/2.png'
-import three from '../assets/certificates/courses/3.png'
-import four from '../assets/certificates/courses/4.png'
-import five from '../assets/certificates/courses/5.png'
-import six from '../assets/certificates/courses/6.png'
-import seven from '../assets/certificates/courses/7.png'
-import eight from '../assets/certificates/courses/8.png'
-import nine from '../assets/certificates/courses/9.png'
+import one from '../assets/certificates/courses/1.webp'
+import two from '../assets/certificates/courses/2.webp'
+import three from '../assets/certificates/courses/3.webp'
+import four from '../assets/certificates/courses/4.webp'
+import five from '../assets/certificates/courses/5.webp'
+import six from '../assets/certificates/courses/6.webp'
+import seven from '../assets/certificates/courses/7.webp'
+import eight from '../assets/certificates/courses/8.webp'
+import nine from '../assets/certificates/courses/9.webp'
 
 const CourseCertificate = [
     {
@@ -383,8 +383,8 @@ const CourseCertificate = [
     },
 ]
 
-import work_1 from '../assets/certificates/works/1.png'
-import work_2 from '../assets/certificates/works/2.png'
+import work_1 from '../assets/certificates/works/1.webp'
+import work_2 from '../assets/certificates/works/2.webp'
 
 const WorkCertificate = [
     {
