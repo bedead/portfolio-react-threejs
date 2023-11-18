@@ -1,13 +1,11 @@
 import React from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
-// import waves from '../assets/waves.png'
-// import {FallingBalls} from "./canvas";
-// import CanvasLoader from "./Loader";
+import TextSlide from "./TextSlides";
 
 const Hero = () => {
     return (
-        <section className="relative w-full h-screen mx-auto">
+        <section className="relative w-full h-screen mx-auto overflow-hidden">
 
             <div className={
                 `${styles.paddingX
@@ -29,7 +27,7 @@ const Hero = () => {
                         `${styles.heroSubText
                         } mt-2 text-black-100`
                     }>
-                        I'm a computer science student with simple amd dumb mind.
+                        I'm a computer science student with simple and dumb mind.
                     </p>
                     <p className={
                         `${styles.sectionSubText
@@ -40,10 +38,24 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* 3d graphics */}
-            {/* <FallingBalls/> scroll down button */}
-            {/* <img src={waves}
-                className="absolute z-12 top-24"/> */}
+            <div className="relative ">
+                <TextSlide x_from={0} duration={10} className='absolute top-80 z-5 font-mono font-extrabold text-[90px]' >
+                    GAMES
+                </TextSlide>
+                <TextSlide x_from={-100} duration={15} className='absolute top-[400px] z-5 font-extrabold text-[70px]' >
+                    WEB DEVELOPMENT
+                </TextSlide>
+                <TextSlide x_from={-80} duration={8} className='absolute top-20 z-5 font-mono font-extrabold text-[20px]' >
+                    HUMANS
+                </TextSlide>
+                <TextSlide x_from={0} duration={10} className='absolute top-40 z-5 font-extrabold text-[40px]' >
+                    deep learning
+                </TextSlide>
+                <TextSlide x_from={-1600} duration={10} className='absolute top-40 z-5 font-mono font-semibold text-[500px]' >
+                    Machine
+                </TextSlide>
+            </div>
+
             <div className="absolute z-10 xs:bottom-10 bottom-32 w-full flex justify-center items-center">
                 <a href="#about">
                     <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#373737] flex justify-center items-start p-2 ">
@@ -56,7 +68,7 @@ const Hero = () => {
                                 {
                                     duration: 1.5,
                                     repeat: Infinity,
-                                    repeatType: 'loop'
+                                    repeatType: 'loop',
                                 }
                             }
                             className="w-3 h-3 rounded-full bg-secondary mb-2" />
