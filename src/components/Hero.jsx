@@ -15,7 +15,7 @@ const Hero = () => {
                     <div className="w-5 h-5 rounded-full bg-[#373737] " />
                     <div className="w-1 sm:h-80 h-40 violet-gradient" />
                 </div>
-                <div>
+                <div >
                     <h1 className={
                         `${styles.heroHeadText
                         }`
@@ -39,20 +39,26 @@ const Hero = () => {
             </div>
 
             <div className="relative ">
-                <TextSlide x_from={0} duration={10} className='absolute top-80 z-5 font-mono font-extrabold text-[90px]' >
+                <TextSlide x_from={0} duration={10} className='absolute top-80 z-5 text-orange-600 font-mono font-extrabold text-[90px]' >
                     GAMES
                 </TextSlide>
-                <TextSlide x_from={-100} duration={15} className='absolute top-[400px] z-5 font-extrabold text-[70px]' >
+                <TextSlide x_from={-100} duration={15} className='absolute top-[400px] text-slate-600 z-5 font-extrabold text-[70px]' >
                     WEB DEVELOPMENT
                 </TextSlide>
-                <TextSlide x_from={-80} duration={8} className='absolute top-20 z-5 font-mono font-extrabold text-[20px]' >
+                <TextSlide x_from={-80} duration={8} className='absolute top-20 z-5 text-blue-600 font-mono font-extrabold text-[20px]' >
                     HUMANS
                 </TextSlide>
-                <TextSlide x_from={0} duration={10} className='absolute top-40 z-5 font-extrabold text-[40px]' >
+                <TextSlide x_from={-100} duration={20} className='absolute top-40 z-5 text-blue-500 font-extrabold text-[40px]' >
                     deep learning
                 </TextSlide>
-                <TextSlide x_from={-1600} duration={10} className='absolute top-40 z-5 font-mono font-semibold text-[500px]' >
+                <TextSlide x_from={-1600} duration={10} className='absolute top-40 text-red-600 z-5 font-mono font-semibold text-[500px]' >
                     Machine
+                </TextSlide>
+                <TextSlide x_from={0} duration={20} className='absolute top-10 z-5 text-yellow-600 font-mono font-semibold text-[80px]' >
+                    Designing
+                </TextSlide>
+                <TextSlide x_from={-500} duration={12} className='absolute top-4 z-5 text-green-800 font-mono font-semibold text-[200px]' >
+                    Psychology
                 </TextSlide>
             </div>
 
