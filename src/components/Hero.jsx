@@ -18,27 +18,27 @@ const Hero = () => {
                 <div >
                     <h1 className={
                         `${styles.heroHeadText
-                        }`
+                        } funky-text-outline-2 `
                     }>Hi, I'm
                         <span className="text-black ">
                             Satyam</span>
                     </h1>
                     <p className={
                         `${styles.heroSubText
-                        } mt-2 text-black-100`
+                        } funky-text-outline mt-2 text-black-100`
                     }>
                         I'm a computer science student with simple and dumb mind.
                     </p>
                     <p className={
                         `${styles.sectionSubText
-                        } mt-2 text-gray-600`
+                        } funky-text-outline mt-2 text-gray-600`
                     }>
                         This is just a website showcasing some of my works and experiments. Have a look untill you get bored 🥱
                     </p>
                 </div>
             </div>
 
-            <div className="relative ">
+            {/* <div className="relative ">
                 <TextSlide x_from={0} duration={10} className='absolute top-80 z-5 text-orange-600 font-mono font-extrabold text-[90px]' >
                     GAMES
                 </TextSlide>
@@ -60,7 +60,7 @@ const Hero = () => {
                 <TextSlide x_from={-500} duration={12} className='absolute top-4 z-5 text-green-800 font-mono font-semibold text-[200px]' >
                     Psychology
                 </TextSlide>
-            </div>
+            </div> */}
 
             <div className="absolute z-10 xs:bottom-10 bottom-32 w-full flex justify-center items-center">
                 <a href="#about">
