@@ -91,7 +91,7 @@ const experiences = [
         iconBg: "white",
         date: "October 2023 - Ongoing",
         points: [
-            'Writing proffesional articles related to IT.',
+            'Writing Professional articles related to IT.',
             'Ensuring use of no AI content in articles.',
             'Creating articles on real facts and data.'
         ],
@@ -416,6 +416,15 @@ const WorkCertificate = [
     },
 ]
 
+import prof_1 from '../assets/certificates/prof/1.webp'
+
+const ProfessionalCertificate = [
+    {
+        name: " Google Cloud Digital Leader",
+        image: prof_1
+    },
+]
+
 const blogs = [
     {
         name: "",
@@ -434,4 +443,4 @@ const blogs = [
     }
 ]
 
-export { navLinks, toolLinks, services, experiences, projects, CourseCertificate, WorkCertificate, blogs };
+export { navLinks, toolLinks, services, experiences, projects, CourseCertificate, WorkCertificate, ProfessionalCertificate, blogs };
