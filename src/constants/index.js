@@ -47,9 +47,10 @@ const navLinks = [
 
 const toolLinks = [
     {
-        id: "imageupscaler",
-        title: "Image Upscaler",
-        type: "image"
+        id: "downloadtube",
+        title: "DownloadTube (Youtube Downloader)",
+        type: "video",
+        url: "https://downloadtube-iota.vercel.app/"
     },
     // {
     //     id: "imageupscaler",

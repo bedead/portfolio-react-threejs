@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import { styles } from '../styles'
 import { navLinks, toolLinks } from "../constants";
 import logo_white from '../assets/logo/logo-white.webp'
 import menu from '../assets/general/menu.webp'
 import close from '../assets/general/close.webp'
+import { fadeIn } from "../utils/motion";
+
 
 const NavBar = () => {
     const [active, setActive] = useState('');
@@ -69,9 +72,13 @@ const NavBar = () => {
                     <ul className="list-none flex justify-end items-start flex-col gap-2">
                         {
                             toolLinks.map((link) => (
-                                <li key={
-                                    link.id
-                                }
+                                <motion.li
+                                    key={
+                                        link.id
+                                    }
+                                    variants={
+                                        fadeIn('right', 'spring', 0.1, 0.75)
+                                    }
                                     className={
                                         `${active == link.title ? "text-black" : "text-secondary"
                                         } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
@@ -80,13 +87,11 @@ const NavBar = () => {
                                         () => {
                                             setToolsDialogBox(!toggleDialogBox);
                                             setActive(link.title);
+                                            window.open(link.url, '_blank');
                                         }
                                     }>
-                                    {link.type == 'tools' ? link.title : <Link to={`/${link.id}`}>
-                                        {
-                                            link.title
-                                        } </Link>}
-                                </li>
+                                    {link.title}
+                                </motion.li>
                             ))
                         } </ul>
                 </div>

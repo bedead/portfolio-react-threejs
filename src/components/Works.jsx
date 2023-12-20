@@ -95,10 +95,10 @@ const Works = () => {
     return (
         <div>
             <motion.div
-                // variants={
-                //     textVariant(0)
-                // } 
-                >
+            // variants={
+            //     textVariant(0)
+            // } 
+            >
                 <h2 className={
                     `${styles.sectionHeadText
                     } text-center`
