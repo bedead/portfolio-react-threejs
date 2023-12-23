@@ -27,8 +27,8 @@ export default function Blogs() {
             <div className='bg-white'>
                 <NavBar />
                 <div className='relative pb-10 top-[120px] lg:top-[100px] bg-gradient-to-b from-white to-primary'>
-                    {/* <ComingSoon /> */}
-                    <BlogLists />
+                    <ComingSoon />
+                    {/* <BlogLists /> */}
                 </div>
             </div>
         </Suspense>
