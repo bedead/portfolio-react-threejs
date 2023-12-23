@@ -5,13 +5,11 @@ import { styles } from "../styles";
 
 
 
-export default function CertificateLists() {
+const CertificateLists = () => {
     return (
         <div className="my-10">
-
-
             {/* Certificates related to Professional certification exams such as google,etc */}
-            <div >
+            <div  >
                 <h2 className={
                     `${styles.sectionHeadText
                     } text-center`
@@ -21,6 +19,7 @@ export default function CertificateLists() {
                     } text-center`
                 }>Professional Certificates</p>
             </div>
+
             <div className='my-20 flex flex-wrap justify-center mx-auto space-x-5 gap-5 w-full'>
                 {
                     ProfessionalCertificate.map((project, index) => (
@@ -66,6 +65,7 @@ export default function CertificateLists() {
                 } </div>
 
         </div>
-    )
-}
+    );
+};
 
+export default CertificateLists;
