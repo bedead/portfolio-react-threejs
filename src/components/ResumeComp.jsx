@@ -12,6 +12,14 @@ const ResumeComp = () => {
     const openDialog = () => setDialogOpen(true);
     const closeDialog = () => setDialogOpen(false);
 
+    const handleDownload = () => {
+        // dummy anchor element to trigger the download
+        const anchor = document.createElement('a');
+        anchor.href = resume_pdf;
+        anchor.download = 'Satyam_Mishra_Resume';
+        anchor.click();
+    };
+
     return (
 
         <div className="max-w-screen-xl  mx-auto my-10 space-y-10 max">
@@ -30,11 +38,7 @@ const ResumeComp = () => {
             </div>
 
             {/* Cover and Button */}
-            <div className="md:flex justify-center items-center"
-                data-tooltip-id="resume_cover_tooltip"
-                data-tooltip-content="Hover the right side of card more options.."
-                data-tooltip-delay-hide={500}
-            >
+            <div className="md:flex justify-center items-center">
                 {/* Frontpage Image */}
                 <Tilt options={
                     {
@@ -44,9 +48,13 @@ const ResumeComp = () => {
                     }
                 }
 
-                    className='bg-white shadow-[#fcd4d4] shadow-card  rounded-2xl md:w-1/2 w-full h-full'>
+                    className='group bg-white shadow-[#fcd4d4] shadow-card rounded-2xl mx-auto w-[90%] md:min-w-1/3 md:max-w-3xl h-full'>
 
-                    <div className='relative w-full h-full'>
+                    <div className='group-hover:opacity-100 relative w-full h-full mb-5'
+                    // data-tooltip-id="resume_cover_tooltip"
+                    // data-tooltip-content="Hover the right side of card more options.."
+                    // data-tooltip-delay-hide={500}
+                    >
                         <img src={cover_img}
                             loading="lazy"
                             alt='Resume cover image'
@@ -54,17 +62,15 @@ const ResumeComp = () => {
                     </div>
 
                     {/* Buttons Container */}
-                    <div className="space-y-4 absolute top-10 -right-10 bottom-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="group-hover:opacity-100 flex items-center space-x-5 md:space-y-5 justify-center md:absolute md:top-10 md:-right-10 md:bottom-0 md:flex md:flex-col md:items-center md:justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                         <button
-                            className="bg-blue-600 text-white hover:text-white-100 hover:bg-blue-800 py-2 px-3 rounded-xl text-[15px] font-medium cursor-pointer"
-                            onClick={() => {
-                                // Add logic to trigger PDF download
-                            }}
+                            className="bg-blue-600 text-white hover:text-white-100 hover:bg-blue-800 py-2 px-3 rounded-xl text-[15px] font-medium cursor-pointer mb-2 md:mb-0"
+                            onClick={handleDownload}
                         >
                             Download
                         </button>
                         <button
-                            className="bg-green-600 text-white hover:text-white-100 hover:bg-green-800 py-2 px-3 rounded-xl text-[15px] font-medium cursor-pointer"
+                            className="bg-green-600 text-white hover:text-white-100 hover:bg-green-800 py-2 px-3 rounded-xl text-[15px] font-medium cursor-pointer mb-2 md:mb-0"
                             onClick={openDialog}
                         >
                             View
@@ -75,15 +81,15 @@ const ResumeComp = () => {
             </div>
 
             {/* Tooltip */}
-            <Tooltip id='resume_cover_tooltip' />
+            {/* <Tooltip id='resume_cover_tooltip' /> */}
 
             {/* PDF Dialog */}
             {isDialogOpen && (
                 <div className="fixed inset-0 z-50 overflow-auto -top-10 bg-black bg-opacity-60 flex items-center justify-center">
-                    <div className="bg-white p-2 rounded-2xl max-w-screen-lg w-full relative">
+                    <div className="bg-white p-2 rounded-2xl max-w-screen-lg w-[70%] relative">
                         {/* Close Button */}
                         <button
-                            className="absolute top-2 -right-20 bg-black hover:bg-gray-800 py-2 px-3 rounded-xl text-white hover:text-gray-200"
+                            className="absolute -top-12 right-0 md:top-2 md:-right-20 bg-black hover:bg-gray-800 py-2 px-3 rounded-xl text-white hover:text-gray-200"
                             onClick={closeDialog}
                         >
                             Close

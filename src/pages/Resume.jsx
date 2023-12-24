@@ -2,7 +2,6 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import { Suspense, lazy } from "react";
 import load from '../assets/loader/anim-bg.gif'
-import ComingSoon from '../components/ComingSoon';
 import ResumeComp from '../components/ResumeComp';
 
 
