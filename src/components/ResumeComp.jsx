@@ -3,7 +3,9 @@ import cover_img from '../assets/resume/cover_img.png'
 import resume_pdf from '../assets/resume/resume.pdf'
 import { Tilt } from 'react-tilt';
 import { styles } from "../styles";
-import { Tooltip } from 'react-tooltip';
+import { motion } from 'framer-motion';
+import { textVariant, fadeIn } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 
 const ResumeComp = () => {
@@ -22,11 +24,11 @@ const ResumeComp = () => {
 
     return (
 
-        <div className="max-w-screen-xl  mx-auto my-10 space-y-10 max">
+        <div className="-m-5 md:-m-10 max-w-screen-xl  mx-auto my-10 space-y-10 max">
             {/* Card Container */}
 
             {/* Headings Text */}
-            <div  >
+            <motion.div variants={textVariant(0)} >
                 <h2 className={
                     `${styles.sectionHeadText
                     } text-center`
@@ -35,10 +37,12 @@ const ResumeComp = () => {
                     `${styles.sectionSubText
                     } text-center`
                 }>Check out my beginner resume🤣</p>
-            </div>
+            </motion.div>
 
             {/* Cover and Button */}
-            <div className="md:flex justify-center items-center">
+            <motion.div variants={
+                fadeIn('right', 'spring', 0.5 * 0, 0.75)
+            } className="md:flex justify-center items-center">
                 {/* Frontpage Image */}
                 <Tilt options={
                     {
@@ -78,7 +82,7 @@ const ResumeComp = () => {
                     </div>
                 </Tilt>
 
-            </div>
+            </motion.div>
 
             {/* Tooltip */}
             {/* <Tooltip id='resume_cover_tooltip' /> */}
@@ -108,4 +112,4 @@ const ResumeComp = () => {
     );
 };
 
-export default ResumeComp;
+export default SectionWrapper(ResumeComp, 'ResumeComp');

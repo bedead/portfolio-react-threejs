@@ -1,6 +1,9 @@
 import React from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
+import { textVariant, fadeIn } from "../utils/motion";
+import SectionWrapper from "../hoc/SectionWrapper";
+
 
 const Hero = () => {
     const text = "Hi, I'm Satyam";
@@ -17,13 +20,15 @@ const Hero = () => {
                     <div className="w-1 sm:h-80 h-40 violet-gradient" />
                 </div>
                 <div >
-                    <h1 className={
+                    <motion.h1 variants={textVariant(0)} className={
                         `${styles.heroHeadText
                         } funky-text-outline-2 `
                     }>
                         {text}
-                    </h1>
-                    <div >
+                    </motion.h1>
+                    <motion.div variants={
+                        fadeIn('', '', 0.1, 1)
+                    }>
                         <p className={
                             `${styles.heroSubText
                             } funky-text-outline mt-2 text-black-100`
@@ -36,7 +41,7 @@ const Hero = () => {
                         }>
                             This is just a website showcasing some of my works and experiments. Have a look untill you get bored 🥱
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
@@ -65,4 +70,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default SectionWrapper(Hero, "Hero");

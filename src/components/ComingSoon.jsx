@@ -1,9 +1,10 @@
+import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 
 
-export default function ComingSoon() {
+function ComingSoon() {
     return (
         <motion.div variants={
             textVariant(0)
@@ -23,3 +24,5 @@ export default function ComingSoon() {
         </motion.div>
     )
 }
+
+export default SectionWrapper(ComingSoon, 'ComingSoon')
