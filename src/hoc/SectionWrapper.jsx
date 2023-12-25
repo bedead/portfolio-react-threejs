@@ -13,9 +13,10 @@ const SectionWrapper = (Component, idName) => function HOC() {
             viewport={
                 {
                     once: true,
-                    amount: 0.25
+                    amount: 0
                 }
             }
+            exit='hidden'
             className={
                 `${styles.padding
                 } max-w-7xl mx-auto relative z-0`

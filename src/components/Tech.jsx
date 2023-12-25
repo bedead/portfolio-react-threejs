@@ -1,5 +1,3 @@
-import React from "react";
-
 import { SectionWrapper } from "../hoc";
 import BallCanvas from './canvas/Ball'
 import texture from '../assets/general/texture.webp'
@@ -10,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Tech = () => {
     return (
-        <div className='flex flex-row flex-wrap justify-center items-center gap-10'>
+        <div className='xl:mt-6 flex flex-row flex-wrap justify-center items-center gap-10'>
             <motion.div
                 variants={
                     textVariant()
