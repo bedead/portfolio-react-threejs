@@ -14,10 +14,10 @@ const Ball = (props) => {
     const [decal] = useTexture([props.imgUrl]);
 
     return (
-        <Float speed={1.5}
-            rotationIntensity={1}
-            floatIntensity={1}>
-            <ambientLight intensity={0.25} />
+        <Float speed={1}
+            rotationIntensity={0}
+            floatIntensity={5}>
+            <ambientLight intensity={2.4} />
             <directionalLight position={
                 [0, 0, 0.05]
             } />
