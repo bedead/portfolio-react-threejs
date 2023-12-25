@@ -46,7 +46,7 @@ const Hero = () => {
             </div>
 
 
-            <div className="absolute z-10 xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+            <div className="absolute z-10 xs:bottom-15 bottom-32 w-full flex justify-center items-center">
                 <a href="#about">
                     <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#373737] flex justify-center items-start p-2 ">
                         <motion.div animate={
