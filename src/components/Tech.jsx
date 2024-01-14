@@ -27,7 +27,7 @@ const Tech = () => {
                 </p>
 
             </motion.div>
-            <div className='lg:w-[400px] lg:h-[400px]' key='skillsBall'>
+            <div className='w-full lg:w-[400px] lg:h-[400px] ' key='skillsBall'>
                 <BallCanvas icon={texture} />
             </div>
         </div>

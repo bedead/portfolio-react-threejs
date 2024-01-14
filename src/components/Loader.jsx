@@ -20,7 +20,7 @@ const CanvasLoader = () => {
   return (
     <Html as='div' center style={containerStyle}>
       <span className='canvas-loader'></span>
-      <p style={percentageStyle}>{progress.toFixed(2)}%</p>
+      <p style={percentageStyle}>{progress.toFixed(0)}%</p>
     </Html>
   );
 };
