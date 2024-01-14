@@ -81,15 +81,16 @@ const services = [
 
 import csi from '../assets/experience/csi.webp'
 import msc from '../assets/experience/msc.webp'
-import techyv from '../assets/experience/techyv.webp'
+// import techyv from '../assets/experience/techyv.webp'
+import nettv4u from '../assets/experience/nettv4u.webp'
 
 const experiences = [
     {
-        title: "Content Writer",
-        company_name: "Techyv",
-        icon: techyv,
+        title: "Technical Content Writer",
+        company_name: "Nettv4u",
+        icon: nettv4u,
         iconBg: "white",
-        date: "October 2023 - Ongoing",
+        date: "October 2023 - December 2023 (2 Months)",
         points: [
             'Writing Professional articles related to IT.',
             'Ensuring use of no AI content in articles.',
@@ -101,7 +102,7 @@ const experiences = [
         company_name: "Microsoft Student Chapter",
         icon: msc,
         iconBg: "black",
-        date: "October 2022 - March 2023",
+        date: "October 2022 - March 2023 (6 Months)",
         points: [
             "Maintaining the website and ensuring that it is up-to-date and functioning properly.",
             "Collaborating with other members of the chapter to identify areas for improvement on the website.",
@@ -114,7 +115,7 @@ const experiences = [
         company_name: "CSI Chapter",
         icon: csi,
         iconBg: "white",
-        date: "Augest 2021 - June 2022",
+        date: "Augest 2021 - June 2022 (11 Months)",
         points: [
             "Conducting regular meetings to discuss open source projects and new initiatives.",
             "Conducting workshops and training sessions to help members learn more about open source technologies.",
@@ -417,11 +418,16 @@ const WorkCertificate = [
 ]
 
 import prof_1 from '../assets/certificates/prof/1.webp'
+import prof_2 from '../assets/certificates/prof/2.webp'
 
 const ProfessionalCertificate = [
     {
         name: " Google Cloud Digital Leader",
         image: prof_1
+    },
+    {
+        name: " AI and ML with Data Science",
+        image: prof_2
     },
 ]
 
