@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { styles } from '../styles'
 import { navLinks, toolLinks } from "../constants";
@@ -16,10 +16,11 @@ const NavBar = () => {
     const [toggleDialogBox, setToolsDialogBox] = useState(false);
 
     return (
-        <nav className={
+        <motion.nav className={
             `${styles.paddingX
             } w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-b from-white to-primary`
-        }>
+        }
+        >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
                 <Link to='/' className="flex items-center gap-2"
                     onClick={
@@ -64,37 +65,47 @@ const NavBar = () => {
                         ))
                     } </ul>
 
-                <div className={
-                    `${!toggleDialogBox ? 'hidden' : 'flex'
-                    } p-6 bg-gradient-to-r from-[#f6f6f6] to-white absolute
+                <AnimatePresence>
+                    {toggleDialogBox && (
+                        <motion.div
+                            className={
+                                `${!toggleDialogBox ? 'hidden' : 'flex'
+                                } p-6 bg-gradient-to-r from-[#f6f6f6] to-white absolute
                     top-60 right-40 sm:top-20 sm:right-5 mx-4 my-2 min-w-[140px] z-10 rounded-xl outline`
-                }>
-                    <ul className="list-none flex justify-end items-start flex-col gap-2">
-                        {
-                            toolLinks.map((link) => (
-                                <motion.li
-                                    key={
-                                        link.id
-                                    }
-                                    variants={
-                                        fadeIn('right', 'spring', 0.1, 0.75)
-                                    }
-                                    className={
-                                        `${active == link.title ? "text-black" : "text-secondary"
-                                        } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
-                                    }
-                                    onClick={
-                                        () => {
-                                            setToolsDialogBox(!toggleDialogBox);
-                                            setActive(link.title);
-                                            window.open(link.url, '_blank');
-                                        }
-                                    }>
-                                    {link.title}
-                                </motion.li>
-                            ))
-                        } </ul>
-                </div>
+                            }
+                            initial={{ scale: 0.1, opacity: 0, }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.1, opacity: 0 }}
+                            transition={{ type: 'spring', damping: 10 }}
+                        >
+                            <ul className="list-none flex justify-end items-start flex-col gap-2">
+                                {
+                                    toolLinks.map((link) => (
+                                        <motion.li
+                                            key={
+                                                link.id
+                                            }
+                                            variants={
+                                                fadeIn('right', 'spring', 0.1, 0.75)
+                                            }
+                                            className={
+                                                `${active == link.title ? "text-black" : "text-secondary"
+                                                } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
+                                            }
+                                            onClick={
+                                                () => {
+                                                    setToolsDialogBox(!toggleDialogBox);
+                                                    setActive(link.title);
+                                                    window.open(link.url, '_blank');
+                                                }
+                                            }>
+                                            {link.title}
+                                        </motion.li>
+                                    ))
+                                } </ul>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
 
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img src={
@@ -106,39 +117,49 @@ const NavBar = () => {
                             () => setToggle(!toggle)
                         } />
 
-                    <div className={
-                        `${!toggle ? 'hidden' : 'flex'
-                        } p-6 bg-gradient-to-r from-[#f6f6f6] to-white absolute
+                    <AnimatePresence>
+                        {toggle && (
+                            <motion.div
+                                className={
+                                    `${!toggle ? 'hidden' : 'flex'
+                                    } p-6 bg-gradient-to-r from-[#f6f6f6] to-white absolute
                     top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl outline`
-                    }>
-                        <ul className="list-none flex justify-end items-start flex-col gap-2">
-                            {
-                                navLinks.map((link) => (
-                                    <li key={
-                                        link.id
-                                    }
-                                        className={
-                                            `${active == link.title ? "text-black" : "text-secondary"
-                                            } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
-                                        }
-                                        onClick={
-                                            () => {
-                                                { link.type != 'tools' ? setToggle(!toggle) : null };
-                                                setActive(link.title);
-                                                { link.type == 'tools' ? setToolsDialogBox(!toggleDialogBox) : null };
+                                }
+                                initial={{ scale: 0.1, opacity: 0, }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.1, opacity: 0 }}
+                                transition={{ type: 'spring', damping: 10 }}
+                            >
+                                <ul className="list-none flex justify-end items-start flex-col gap-2">
+                                    {
+                                        navLinks.map((link) => (
+                                            <li key={
+                                                link.id
                                             }
-                                        }>
-                                        {link.type == 'tools' ? link.title : <Link to={`/${link.id}`}>
-                                            {
-                                                link.title
-                                            } </Link>}
-                                    </li>
-                                ))
-                            } </ul>
-                    </div>
+                                                className={
+                                                    `${active == link.title ? "text-black" : "text-secondary"
+                                                    } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
+                                                }
+                                                onClick={
+                                                    () => {
+                                                        { link.type != 'tools' ? setToggle(!toggle) : null };
+                                                        setActive(link.title);
+                                                        { link.type == 'tools' ? setToolsDialogBox(!toggleDialogBox) : null };
+                                                    }
+                                                }>
+                                                {link.type == 'tools' ? link.title : <Link to={`/${link.id}`}>
+                                                    {
+                                                        link.title
+                                                    } </Link>}
+                                            </li>
+                                        ))
+                                    } </ul>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
-        </nav >
+        </motion.nav >
     )
 }
 

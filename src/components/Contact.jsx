@@ -25,6 +25,8 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    emailjs.init("Tlnn1O7PC8WlYPRT7");
+
     emailjs
       .send("service_w2nrv74", "template_hmf109b", {
         from_name: form.name,
@@ -54,7 +56,10 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Get In Touch.</h3>
 
         {success ? (
-          <p className='text-green-500 mt-2 text-center'>Thank you. I will get back to you as soon as possible.</p>
+          <div>
+            <p className='text-green-500 mt-2'>Thank you. I have recieved your msg.</p>
+            <p className='text-green-500'>I will get back to you right on.</p>
+          </div>
         ) : (
           <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
             <label className='flex flex-col'>
@@ -68,7 +73,27 @@ const Contact = () => {
                 className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
               />
             </label>
-            {/* Add similar labels for email and message fields */}
+            <label className='flex flex-col'>
+              <span className='text-black font-medium mb-4'>Your Email</span>
+              <input
+                type='email'
+                name='email'
+                value={form.email}
+                onChange={handleChange}
+                placeholder="What's your email?"
+                className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
+              />
+            </label>
+            <label className='flex flex-col'>
+              <span className='text-black font-medium mb-4'>Your Message</span>
+              <textarea
+                name='message'
+                value={form.message}
+                onChange={handleChange}
+                placeholder="What's your message?"
+                className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
+              />
+            </label>
 
             <button type='submit' aria-busy={loading} className='bg-black hover:bg-slate-600 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>
               {loading ? "Sending..." : "Send"}
@@ -76,7 +101,6 @@ const Contact = () => {
           </form>
         )}
       </motion.div>
-      {/* ... */}
     </div>
   );
 };
