@@ -12,6 +12,7 @@ import github from '../assets/icons/github.webp'
 import appstore from '../assets/icons/appstore.png'
 import colab from '../assets/icons/colab.png'
 import huggingface from '../assets/icons/huggingface.png'
+import website from '../assets/icons/website.gif'
 
 
 const ProjectCard = ({
@@ -52,9 +53,9 @@ const ProjectCard = ({
                             }
                                 className='white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
                                 <img src={
-                                    link_type == 'github' ? github : link_type == 'colab' ? colab : link_type == 'huggingface' ? huggingface : link_type == 'appstore' ? appstore : github
+                                    link_type == 'github' ? github : link_type == 'colab' ? colab : link_type == 'huggingface' ? huggingface : link_type == 'appstore' ? appstore : link_type == 'website' ? website : github
                                 }
-                                    alt='github repositories for projects'
+                                    alt='source to find project'
                                     className='w-1/2 h-1/2 object-contain' />
                             </div>
                         </div>
