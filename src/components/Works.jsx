@@ -12,7 +12,7 @@ import github from '../assets/icons/github.webp'
 import appstore from '../assets/icons/appstore.png'
 import colab from '../assets/icons/colab.png'
 import huggingface from '../assets/icons/huggingface.png'
-import website from '../assets/icons/website.gif'
+import live from '../assets/icons/website.gif'
 
 
 const ProjectCard = ({
@@ -23,7 +23,6 @@ const ProjectCard = ({
     image,
     source_code_link,
     date,
-    link_type
 }) => {
     return (
         <Tilt className='sm:w-[360px] w-full'>
@@ -47,17 +46,27 @@ const ProjectCard = ({
                             alt='project_image'
                             className='w-full h-full object-cover rounded-2xl' />
 
-                        <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-                            <div onClick={
-                                () => window.open(source_code_link, "_blank")
-                            }
-                                className='white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
-                                <img src={
-                                    link_type == 'github' ? github : link_type == 'colab' ? colab : link_type == 'huggingface' ? huggingface : link_type == 'appstore' ? appstore : link_type == 'website' ? website : github
-                                }
-                                    alt='source to find project'
-                                    className='w-1/2 h-1/2 object-contain' />
-                            </div>
+                        <div className='absolute inset-0 z-10 space-y-3 flex-col justify-end m-3 card-img_hover'>
+                            {Object.entries(source_code_link).map(([key, link]) => (
+                                <div
+                                    key={key}
+                                    onClick={() => window.open(link, "_blank")}
+                                    className='border-black border-2 white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                                >
+                                    <img
+                                        src={
+                                            key === 'Github' ? github :
+                                                key === 'Appstore' ? appstore :
+                                                    key === 'Colab' ? colab :
+                                                        key === 'Huggingface' ? huggingface :
+                                                            key === 'Live' ? live :
+                                                                live // Default case if none of the keys match
+                                        }
+                                        alt={`${key} link`}
+                                        className='w-1/2 h-1/2 object-contain'
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
 
