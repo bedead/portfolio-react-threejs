@@ -158,7 +158,6 @@ const projects = [
         },
         date: 'February 2024',
     },
-
     {
         name: "ConvoGen AI",
         description:

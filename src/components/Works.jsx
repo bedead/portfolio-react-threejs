@@ -52,6 +52,12 @@ const ProjectCard = ({
                                     key={key}
                                     onClick={() => window.open(link, "_blank")}
                                     className='border-black border-2 white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                                    title={key === 'Github' ? 'View in GitHub' :
+                                        key === 'Appstore' ? 'View in App Store' :
+                                            key === 'Colab' ? 'View in Google Colab' :
+                                                key === 'Huggingface' ? 'View in Hugging Face' :
+                                                    key === 'Live' ? 'View Live Website' :
+                                                        'View Now'} // Default tooltip if none of the keys match
                                 >
                                     <img
                                         src={

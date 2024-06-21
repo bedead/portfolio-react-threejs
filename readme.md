@@ -29,4 +29,3 @@ src/
 |-- App.jsx              # Main React application entry
 |-- index.js             # Root file
 ```
-
