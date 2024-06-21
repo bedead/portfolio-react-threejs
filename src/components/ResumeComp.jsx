@@ -36,7 +36,7 @@ const ResumeComp = () => {
                 <p className={
                     `${styles.sectionSubText
                     } text-center`
-                }>Check out my beginner resume🤣</p>
+                }>Check out my resume</p>
             </motion.div>
 
             {/* Cover and Button */}
@@ -66,7 +66,7 @@ const ResumeComp = () => {
                     </div>
 
                     {/* Buttons Container */}
-                    <div className="group-hover:opacity-100 flex items-center space-x-5 md:space-y-5 justify-center md:absolute md:top-10 md:-right-10 md:bottom-0 md:flex md:flex-col md:items-center md:justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className=" flex items-center space-x-5 md:space-y-5 justify-center md:absolute md:top-10 md:-right-10 md:bottom-0 md:flex md:flex-col md:items-center md:justify-center transition-opacity duration-300">
                         <button
                             className="bg-blue-600 text-white hover:text-white-100 hover:bg-blue-800 py-2 px-3 rounded-xl text-[15px] font-medium cursor-pointer mb-2 md:mb-0"
                             onClick={handleDownload}
