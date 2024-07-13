@@ -107,9 +107,9 @@ const ProjectCard = ({
     );
 };
 
-const Works = () => {
+const Projects = () => {
     return (
-        <div className="-m-5 md:-m-10 ">
+        <section className="-m-5 md:-m-10 ">
             <motion.div
                 variants={textVariant(0)} >
                 <h2 className={
@@ -147,8 +147,8 @@ const Works = () => {
                             {...project} />
                     ))
                 } </div>
-        </div>
+        </section>
     );
 };
 
-export default SectionWrapper(Works, "project");
+export default SectionWrapper(Projects, "ProjectsSection");

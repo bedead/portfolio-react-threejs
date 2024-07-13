@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
@@ -50,59 +49,86 @@ const Contact = () => {
   };
 
   return (
-    <div className={`xl:mt-6 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden md:w-[80%] lg:w-[70%] `}>
-      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-white p-8 shadow-[#fcd4d4] shadow-card rounded-2xl'>
-        <p className={styles.sectionSubText}>I am open to work</p>
-        <h3 className={styles.sectionHeadText}>Get In Touch.</h3>
+    <section id="ContactSection" className={`sm:px-16 sm:py-12 xl:mt-6  bg-white px-8 py-12 m-auto space-y-8`}>
+      <div className="flex-row md:flex">
+        <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='bg-[#fff2f2] shadow-lg p-12 flex-[0.75] md:max-w-[50%] rounded-2xl'>
+          <p className={styles.sectionSubText}>I am open to work</p>
+          <h3 className={styles.sectionHeadText}>Get In Touch.</h3>
 
-        {success ? (
-          <div>
-            <p className='text-green-500 mt-2'>Thank you. I have recieved your msg.</p>
-            <p className='text-green-500'>I will get back to you right on.</p>
+          {success ? (
+            <div>
+              <p className='text-green-500 mt-2'>Thank you. I have recieved your msg.</p>
+              <p className='text-green-500'>I will get back to you right on.</p>
+            </div>
+          ) : (
+            <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-1'>
+              <label className='flex flex-col'>
+                <span className='text-black font-medium mb-1'>Your Name</span>
+                <input
+                  type='text'
+                  name='name'
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="What's your good name?"
+                  className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
+                />
+              </label>
+              <label className='flex flex-col'>
+                <span className='text-black font-medium mb-1'>Your Email</span>
+                <input
+                  type='email'
+                  name='email'
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="What's your email?"
+                  className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
+                />
+              </label>
+              <label className='flex flex-col'>
+                <span className='text-black font-medium mb-1'>Your Message</span>
+                <textarea
+                  name='message'
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="What's your message?"
+                  className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
+                />
+              </label>
+
+              <button type='submit' aria-busy={loading} className='bg-black hover:bg-slate-600 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>
+                {loading ? "Sending..." : "Send"}
+              </button>
+            </form>
+          )}
+        </motion.div>
+        <div className="text-center m-auto justify-between space-y-20">
+          <div id="ToolsMade">
+            <h2 className={`${styles.sectionSubText} font-bold text-center mb-2`}>Open source tools made by me 👇</h2>
+            <a href="" className={` text-center`}>DownloadTube</a>
           </div>
-        ) : (
-          <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
-            <label className='flex flex-col'>
-              <span className='text-black font-medium mb-4'>Your Name</span>
-              <input
-                type='text'
-                name='name'
-                value={form.name}
-                onChange={handleChange}
-                placeholder="What's your good name?"
-                className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
-              />
-            </label>
-            <label className='flex flex-col'>
-              <span className='text-black font-medium mb-4'>Your Email</span>
-              <input
-                type='email'
-                name='email'
-                value={form.email}
-                onChange={handleChange}
-                placeholder="What's your email?"
-                className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
-              />
-            </label>
-            <label className='flex flex-col'>
-              <span className='text-black font-medium mb-4'>Your Message</span>
-              <textarea
-                name='message'
-                value={form.message}
-                onChange={handleChange}
-                placeholder="What's your message?"
-                className='bg-secondary py-4 px-6 placeholder:text-white-100 text-white rounded-lg outline-none border-none font-medium'
-              />
-            </label>
-
-            <button type='submit' aria-busy={loading} className='bg-black hover:bg-slate-600 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>
-              {loading ? "Sending..." : "Send"}
-            </button>
-          </form>
-        )}
-      </motion.div>
-    </div>
+          {/* <div id="ToolsMade">
+          <h2 className={`${styles.sectionSubText} font-bold text-center mb-2`}>Open source tools made by me 👇</h2>
+          <a className={` text-center`}>DownloadTube</a>
+        </div> */}
+          <div id="Socials">
+            <h2 className={`${styles.sectionSubText} font-bold text-center mb-2`}>My Socials 👇</h2>
+            <div className="">
+              <a href="https://www.linkedin.com/in/theaiguysatyam/" className={` text-center`}>Linkedin</a>
+              <br />
+              <a href="https://github.com/bedead" className={` text-center`}>Github</a>
+              <br />
+              {/* <a className={` text-center`}>Instagram</a>
+            <br />
+            <a className={` text-center`}>LinkTree</a>
+            <br />
+            <a className={` text-center`}>Gumroad</a> */}
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 >Made with code and hands © 2024 Satyam Mishra</h2>
+    </section>
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default Contact;

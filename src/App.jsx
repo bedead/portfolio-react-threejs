@@ -1,29 +1,24 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-
-import Home from "./pages/Home";
-import Certificate from "./pages/Certificate";
-import Resume from "./pages/Resume";
-import Blogs from "./pages/Blogs";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
-import FreeTools from "./pages/FreeTools";
-import NoPageFound from "./pages/NoPageFound";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import NavBar from "./components/NavBar";
+import TechSkills from "./components/TechSkills";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
+import Certificates from "./components/Certificates";
 
 
 function App() {
     return (
-        <BrowserRouter basename={import.meta.env.BASE_URL} >
-            <Routes>
-                <Route index element={<Home />} />
-                <Route path="/certificate" element={<Certificate />} />
-                <Route path="/resume" element={<Resume />} />
-                <Route path="/blogs" element={<Blogs />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/skills" element={<Skills />} />
-                <Route path="/freetools" element={<FreeTools />} />
-                <Route path="*" element={<NoPageFound />} />
-            </Routes>
-        </BrowserRouter>
+        <div className="bg-gradient-to-b from-white to-primary">
+            <NavBar />
+            <Home />
+            <TechSkills />
+            <Resume />
+            <Projects />
+            <Certificates />
+            {/* <Blogs /> */}
+            <Contact />
+        </div>
     )
 }
 

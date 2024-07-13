@@ -8,7 +8,7 @@ import { textVariant, fadeIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 
-const ResumeComp = () => {
+const Resume = () => {
     const [isDialogOpen, setDialogOpen] = useState(false);
 
     const openDialog = () => setDialogOpen(true);
@@ -24,7 +24,7 @@ const ResumeComp = () => {
 
     return (
 
-        <div className="-m-5 md:-m-10 max-w-screen-xl  mx-auto my-10 space-y-10 max">
+        <section className="-m-5 md:-m-10 max-w-screen-xl  mx-auto my-10 space-y-10 max">
             {/* Card Container */}
 
             {/* Headings Text */}
@@ -108,8 +108,8 @@ const ResumeComp = () => {
                     </div>
                 </div>
             )}
-        </div>
+        </section>
     );
 };
 
-export default SectionWrapper(ResumeComp, 'ResumeComp');
+export default SectionWrapper(Resume, 'ResumeSection');

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { styles } from '../styles'
@@ -22,7 +21,7 @@ const NavBar = () => {
         }
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <Link to='/' className="flex items-center gap-2"
+                <a href="" className="flex items-center gap-2"
                     onClick={
                         () => {
                             setActive("");
@@ -39,7 +38,7 @@ const NavBar = () => {
                         </p>
                         <span className="text-[18px] sm:block hidden">| Bedead</span>
                     </div>
-                </Link>
+                </a>
                 <ul className="list-none hidden sm:flex flex-row md:gap-4 items-center">
                     {
                         navLinks.map((link) => (
@@ -57,10 +56,10 @@ const NavBar = () => {
                                         { link.type == 'tools' ? setToolsDialogBox(!toggleDialogBox) : null }
                                     }
                                 }>
-                                {link.type == 'tools' ? link.title : <Link to={`/${link.id}`}>
+                                {link.type == 'tools' ? link.title : <a href={` #${link.id}`} >
                                     {
                                         link.title
-                                    } </Link>}
+                                    } </a>}
                             </li>
                         ))
                     } </ul>
@@ -147,10 +146,10 @@ const NavBar = () => {
                                                         { link.type == 'tools' ? setToolsDialogBox(!toggleDialogBox) : null };
                                                     }
                                                 }>
-                                                {link.type == 'tools' ? link.title : <Link to={`/${link.id}`}>
+                                                {link.type == 'tools' ? link.title : <a to={`#${link.id}`}>
                                                     {
                                                         link.title
-                                                    } </Link>}
+                                                    } </a>}
                                             </li>
                                         ))
                                     } </ul>

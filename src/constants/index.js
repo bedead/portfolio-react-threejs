@@ -4,33 +4,43 @@ import creator from '../assets/general/creator.webp'
 
 const navLinks = [
     {
-        id: "",
+        id: "HeroSection",
         title: "Home",
         type: "route"
     },
     {
-        id: "projects",
-        title: "Projects",
+        id: "AboutSection",
+        title: "About",
         type: "route"
     },
     {
-        id: "skills",
+        id: "ExperienceSection",
+        title: "Experience",
+        type: "route"
+    },
+    {
+        id: "TechSkillsSection",
         title: "Skills",
         type: "route"
     },
     {
-        id: "certificate",
-        title: "Certificates",
-        type: "route"
-    },
-    {
-        id: "resume",
+        id: "ResumeSection",
         title: "Resume",
         type: "route"
     },
     {
-        id: "blogs",
-        title: "Blogs",
+        id: "ProjectsSection",
+        title: "Projects",
+        type: "route"
+    },
+    {
+        id: "CertificatesSection",
+        title: "Certificates",
+        type: "route"
+    },
+    {
+        id: "ContactSection",
+        title: "Contact",
         type: "route"
     },
     {
@@ -471,16 +481,6 @@ const blogs = [
         description: "",
         link: ""
     },
-    {
-        name: "",
-        description: "",
-        link: ""
-    },
-    {
-        name: "",
-        description: "",
-        link: ""
-    }
 ]
 
 export { navLinks, toolLinks, services, experiences, projects, CourseCertificate, WorkCertificate, ProfessionalCertificate, blogs };

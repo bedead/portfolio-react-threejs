@@ -36,7 +36,7 @@ const ServiceCard = ({ index, title, icon }) => {
 // About component with optimizations
 const About = () => {
   return (
-    <>
+    <section >
       <motion.div variants={textVariant(0)}>
         <h2 className={`${styles.sectionHeadText} text-center`}>Overview.</h2>
         <p className={`${styles.sectionSubText} text-center`}>
@@ -51,9 +51,9 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
 // Export the optimized About component wrapped in SectionWrapper
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, "AboutSection");

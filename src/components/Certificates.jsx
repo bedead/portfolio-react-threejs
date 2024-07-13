@@ -12,9 +12,9 @@ const renderCertificateList = (certificateList) => {
   ));
 };
 
-const CertificateLists = () => {
+const Certificates = () => {
   return (
-    <div className="-m-5 md:-m-10">
+    <section className="-m-5 md:-m-10">
       <motion.div variants={textVariant(0)}>
         <h2 className={`${styles.sectionHeadText} text-center`}>Certificates.</h2>
         <p className={`${styles.sectionSubText} text-center`}>Professional Certificates</p>
@@ -37,8 +37,8 @@ const CertificateLists = () => {
       <div className="my-20 flex flex-wrap justify-center mx-auto space-x-5 gap-5 w-full">
         {renderCertificateList(CourseCertificate)}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default SectionWrapper(CertificateLists, "CertificateLists");
+export default SectionWrapper(Certificates, "CertificatesSection");

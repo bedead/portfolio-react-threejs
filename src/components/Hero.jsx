@@ -51,4 +51,4 @@ const Hero = () => {
   );
 };
 
-export default SectionWrapper(Hero, "Hero");
+export default SectionWrapper(Hero, "HeroSection");
