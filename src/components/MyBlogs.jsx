@@ -2,8 +2,10 @@ import React from "react";
 import { blogs } from "../constants";
 import { styles } from "../styles";
 import BlogCard from "./BlogCard";
+import { SectionWrapper } from "../hoc";
 
-export default function BlogLists() {
+
+function MyBlogs() {
   return (
     <div className="my-10">
       <div>
@@ -20,3 +22,6 @@ export default function BlogLists() {
     </div>
   );
 }
+
+
+export default SectionWrapper(MyBlogs, "BlogsSections");

@@ -5,7 +5,7 @@ import TechSkills from "./components/TechSkills";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
-
+import MyBlogs from './components/MyBlogs'
 
 function App() {
     return (
@@ -15,8 +15,8 @@ function App() {
             <TechSkills />
             <Resume />
             <Projects />
+            <MyBlogs />
             <Certificates />
-            {/* <Blogs /> */}
             <Contact />
         </div>
     )

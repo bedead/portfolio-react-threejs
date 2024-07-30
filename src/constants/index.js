@@ -34,6 +34,11 @@ const navLinks = [
         type: "route"
     },
     {
+        id: "BlogsSections",
+        title: "Blogs",
+        type: "route"
+    },
+    {
         id: "CertificatesSection",
         title: "Certificates",
         type: "route"
@@ -477,10 +482,20 @@ const ProfessionalCertificate = [
 
 const blogs = [
     {
+        name: "React router deployment to gh-pages (issue fixed)",
+        description: "If you are deploying your react routed application ( Vite, CRA) to GitHub pages or facing issues like a page not found when opening any other directory, you are at the right place.",
+        date: "Jan 8, 2024",
+        img: "",
+        link: "https://medium.com/@Satyam_Mishra/react-router-deployment-to-gh-pages-issue-fixed-2024-bc7fd80946ad"
+    },
+    {
         name: "",
         description: "",
+        date: "",
+        img: "",
         link: ""
     },
+
 ]
 
 export { navLinks, toolLinks, services, experiences, projects, CourseCertificate, WorkCertificate, ProfessionalCertificate, blogs };

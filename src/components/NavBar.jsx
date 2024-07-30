@@ -39,6 +39,7 @@ const NavBar = () => {
                         <span className="text-[18px] sm:block hidden">| Bedead</span>
                     </div>
                 </a>
+                {/* Bigger Screen UI */}
                 <ul className="list-none hidden sm:flex flex-row md:gap-4 items-center">
                     {
                         navLinks.map((link) => (
@@ -64,48 +65,7 @@ const NavBar = () => {
                         ))
                     } </ul>
 
-                <AnimatePresence>
-                    {toggleDialogBox && (
-                        <motion.div
-                            className={
-                                `${!toggleDialogBox ? 'hidden' : 'flex'
-                                } p-6 bg-gradient-to-r from-[#f6f6f6] to-white absolute
-                    top-60 right-40 sm:top-20 sm:right-5 mx-4 my-2 min-w-[140px] z-10 rounded-xl outline`
-                            }
-                            initial={{ scale: 0.1, opacity: 0, }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.1, opacity: 0 }}
-                            transition={{ type: 'spring', damping: 10 }}
-                        >
-                            <ul className="list-none flex justify-end items-start flex-col gap-2">
-                                {
-                                    toolLinks.map((link) => (
-                                        <motion.li
-                                            key={
-                                                link.id
-                                            }
-                                            variants={
-                                                fadeIn('right', 'spring', 0.1, 0.75)
-                                            }
-                                            className={
-                                                `${active == link.title ? "text-black" : "text-secondary"
-                                                } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
-                                            }
-                                            onClick={
-                                                () => {
-                                                    setToolsDialogBox(!toggleDialogBox);
-                                                    setActive(link.title);
-                                                    window.open(link.url, '_blank');
-                                                }
-                                            }>
-                                            {link.title}
-                                        </motion.li>
-                                    ))
-                                } </ul>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-
+                {/* Mobile UI */}
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img src={
                         toggle ? close : menu
@@ -146,7 +106,7 @@ const NavBar = () => {
                                                         { link.type == 'tools' ? setToolsDialogBox(!toggleDialogBox) : null };
                                                     }
                                                 }>
-                                                {link.type == 'tools' ? link.title : <a to={`#${link.id}`}>
+                                                {link.type == 'tools' ? link.title : <a href={` #${link.id}`}>
                                                     {
                                                         link.title
                                                     } </a>}

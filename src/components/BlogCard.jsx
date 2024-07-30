@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { fadeIn } from "../utils/motion";
 
-const BlogCard = ({ index, name, image, link }) => {
+const BlogCard = ({ index, name, img, link }) => {
   return (
     <div>
       <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
@@ -17,7 +17,7 @@ const BlogCard = ({ index, name, image, link }) => {
         >
           <div className="relative w-full h-[230px]">
             <img
-              src={image}
+              src={img}
               placeholder={name}
               loading="lazy"
               alt="blog feature image"
