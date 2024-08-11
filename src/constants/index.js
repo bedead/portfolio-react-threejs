@@ -429,13 +429,6 @@ const blogs = [
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*BnZlZbw6_YmuZ_00h9TNrg.png",
         link: "https://medium.com/@Satyam_Mishra/how-to-set-up-vite-react-js-application-to-have-multiple-endpoints-a27a388cbbc3"
     },
-    {
-        name: "",
-        date: "",
-        img: "",
-        link: ""
-    },
-
 
 ]
 
