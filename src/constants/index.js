@@ -429,7 +429,48 @@ const blogs = [
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*BnZlZbw6_YmuZ_00h9TNrg.png",
         link: "https://medium.com/@Satyam_Mishra/how-to-set-up-vite-react-js-application-to-have-multiple-endpoints-a27a388cbbc3"
     },
-
+    {
+        name: "Structuring Flask application for multiple apps",
+        date: "Dec 22, 2022",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*qNHflWY5VgqfzO35htz8Yw.png",
+        link: "https://medium.com/@Satyam_Mishra/structuring-flask-application-for-multiple-apps-part-2-79eefca094de"
+    },
+    {
+        name: "MUST HAVE DEVELOPER / PROGRAMMERS GEARS.",
+        date: "Dec 17, 2022",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*tx9sts6K-tG2myM-OA69vg.png",
+        link: "https://medium.com/@Satyam_Mishra/must-have-developer-programmers-gears-3fd5f805186"
+    },
+    {
+        name: "Learn the basics of Python",
+        date: "Aug 3, 2022",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*G9WB3cWh6SmHFA_2",
+        link: "https://medium.com/@Satyam_Mishra/learn-basics-of-python-part-1-9919303c1b3a"
+    },
+    {
+        name: "Create your first Flask application",
+        date: "Jul 29, 2022",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2fA099YHqxNlcxWOK9hMoA.png",
+        link: "https://medium.com/@Satyam_Mishra/create-your-first-flask-application-48a698b524ca"
+    },
+    {
+        name: "Java vs Python (The Ultimate Programming Language)",
+        date: "Jul 22, 2022",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Y_ycyItZ76XNpY9TM76JMg.jpeg",
+        link: "https://medium.com/@Satyam_Mishra/java-vs-python-the-ultimate-programming-language-8c00a5b49cc"
+    },
+    {
+        name: "Getting started with JavaFx in vscode (Beginner way)",
+        date: "Jul 17, 2022",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*4PYrphm6D1qQ5GfRGLJllw.jpeg",
+        link: "https://medium.com/@Satyam_Mishra/getting-started-with-javafx-in-vscode-beginner-way-9fed580fd4f"
+    },
+    {
+        name: "A Simple guide to script your first movable car in Godot engine.",
+        date: "Jan 10, 2022",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*S4dHJNkanZ_ZQ4-w8fT1nQ.png",
+        link: "https://medium.com/@Satyam_Mishra/a-simple-guide-to-script-your-first-movable-car-in-godot-engine-93177db71472"
+    },
 ]
 
 export { navLinks, toolLinks, services, experiences, projects, blogs };
