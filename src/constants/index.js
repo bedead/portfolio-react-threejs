@@ -52,7 +52,7 @@ const navLinks = [
 
 const toolLinks = [
     {
-        id: "downloadtube",
+        id: "DownloadTube",
         title: "DownloadTube (Youtube Downloader)",
         type: "video",
         url: "https://downloadtube-iota.vercel.app/"

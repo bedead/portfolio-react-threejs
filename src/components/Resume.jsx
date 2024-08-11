@@ -54,19 +54,15 @@ const Resume = () => {
 
                     className='group bg-white shadow-[#fcd4d4] shadow-card rounded-2xl mx-auto w-[90%] md:min-w-1/3 md:max-w-3xl h-full'>
 
-                    <div className='group-hover:opacity-100 relative w-full h-full mb-5'
-                    // data-tooltip-id="resume_cover_tooltip"
-                    // data-tooltip-content="Hover the right side of card more options.."
-                    // data-tooltip-delay-hide={500}
-                    >
+                    <div className='group-hover:opacity-100 relative w-full h-full mb-5'>
                         <img src={cover_img}
                             loading="lazy"
                             alt='Resume cover image'
                             className='w-full h-full object-cover rounded-2xl' />
                     </div>
 
-                    {/* Buttons Container */}
-                    <div className=" flex items-center space-x-5 md:space-y-5 justify-center md:absolute md:top-10 md:-right-10 md:bottom-0 md:flex md:flex-col md:items-center md:justify-center transition-opacity duration-300">
+                    {/* Buttons Container */} 
+                    <div className="flex items-center space-x-5 md:space-y-5 justify-center md:absolute md:top-10 md:-right-10 md:bottom-0 md:flex-col md:items-center md:justify-center transition-opacity duration-300">
                         <button
                             className="bg-blue-600 text-white hover:text-white-100 hover:bg-blue-800 py-2 px-3 rounded-xl text-[15px] font-medium cursor-pointer mb-2 md:mb-0"
                             onClick={handleDownload}
