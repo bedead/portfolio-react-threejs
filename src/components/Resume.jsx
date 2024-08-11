@@ -36,7 +36,7 @@ const Resume = () => {
                 <p className={
                     `${styles.sectionSubText
                     } text-center`
-                }>Check out my resume</p>
+                }>Here's my Resume😁</p>
             </motion.div>
 
             {/* Cover and Button */}

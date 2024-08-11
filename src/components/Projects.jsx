@@ -123,18 +123,11 @@ const Projects = () => {
                     } text-center`
                 }>
                     My works?
+                    Here they are.
                 </p>
             </motion.div>
 
-            <motion.div
-                variants={
-                    fadeIn('', '', 0.1, 1)
-                }
-                className='w-full flex'>
-                <p className='mt-3 text-secondary text-center text-[17px] max-w-full leading-[30px]'>
-                    The projects that are listed below provide examples of my work in the real world, showcasing my abilities and experience. Each project has a brief description, links to code repositories, and live demonstrations. It exhibits my ability to work with various technologies, manage projects efficiently, and solve complex problems.
-                </p>
-            </motion.div>
+
 
             <div className=' mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
