@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar";
 import TechSkills from "./components/TechSkills";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
-import Certificates from "./components/Certificates";
 import MyBlogs from './components/MyBlogs'
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
             <Resume />
             <Projects />
             <MyBlogs />
-            <Certificates />
+            {/* <Certificates /> */}
             <Contact />
         </div>
     )

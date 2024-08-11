@@ -483,18 +483,41 @@ const ProfessionalCertificate = [
 const blogs = [
     {
         name: "React router deployment to gh-pages (issue fixed)",
-        description: "If you are deploying your react routed application ( Vite, CRA) to GitHub pages or facing issues like a page not found when opening any other directory, you are at the right place.",
         date: "Jan 8, 2024",
-        img: "",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*KBr7PR6pMmxKnoOn",
         link: "https://medium.com/@Satyam_Mishra/react-router-deployment-to-gh-pages-issue-fixed-2024-bc7fd80946ad"
     },
     {
+        name: "Vite website file not updating without restarting the development server.",
+        date: "Oct 15, 2023",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*tvWtuvWK1j4r4c1V",
+        link: "https://medium.com/@Satyam_Mishra/vite-website-file-not-updating-without-restarting-the-development-server-68a7a252186b"
+    },
+    {
+        name: "Deploy your vite (react) app to GitHub pages",
+        date: "Oct 5, 2023",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Ndj_GnufQCzvRyT6454_-Q.png",
+        link: "https://medium.com/@Satyam_Mishra/deploy-your-vite-react-app-to-github-pages-a6342dda470a"
+    },
+    {
+        name: "Two of the best free resources for continuous learning",
+        date: "May 6, 2023",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*E8m74KMwm304e_mdPI9g6Q.png",
+        link: "https://medium.com/@Satyam_Mishra/two-of-the-best-free-resources-for-continuous-learning-665fdf52be9b"
+    },
+    {
+        name: "How to set up Vite (react.js) application to have multiple endpoints",
+        date: "Jan 20, 2023",
+        img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*BnZlZbw6_YmuZ_00h9TNrg.png",
+        link: "https://medium.com/@Satyam_Mishra/how-to-set-up-vite-react-js-application-to-have-multiple-endpoints-a27a388cbbc3"
+    },
+    {
         name: "",
-        description: "",
         date: "",
         img: "",
         link: ""
     },
+
 
 ]
 
