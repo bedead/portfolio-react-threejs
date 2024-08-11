@@ -15,7 +15,6 @@ function App() {
             <Resume />
             <Projects />
             <MyBlogs />
-            {/* <Certificates /> */}
             <Contact />
         </div>
     )

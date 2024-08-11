@@ -39,11 +39,6 @@ const navLinks = [
         type: "route"
     },
     {
-        id: "CertificatesSection",
-        title: "Certificates",
-        type: "route"
-    },
-    {
         id: "ContactSection",
         title: "Contact",
         type: "route"
@@ -403,83 +398,6 @@ const projects = [
 ];
 
 
-import one from '../assets/certificates/courses/1.webp'
-import two from '../assets/certificates/courses/2.webp'
-import three from '../assets/certificates/courses/3.webp'
-import four from '../assets/certificates/courses/4.webp'
-import five from '../assets/certificates/courses/5.webp'
-import six from '../assets/certificates/courses/6.webp'
-import seven from '../assets/certificates/courses/7.webp'
-import eight from '../assets/certificates/courses/8.webp'
-import nine from '../assets/certificates/courses/9.webp'
-
-const CourseCertificate = [
-    {
-        name: "Basics of Machien Learing",
-        image: one
-    },
-    {
-        name: "C++ Course",
-        image: two
-    },
-    {
-        name: "Making a Webiste",
-        image: three
-    },
-    {
-        name: "Java (Basics)",
-        image: four
-    },
-    {
-        name: "Matlab Onramp",
-        image: five
-    },
-    {
-        name: "MongoDB Tutorial",
-        image: six
-    },
-    {
-        name: "Python (Basics)",
-        image: seven
-    },
-    {
-        name: "Responsive Web Design Course",
-        image: eight
-    },
-    {
-        name: "TensorFlow Python",
-        image: nine
-    },
-]
-
-import work_1 from '../assets/certificates/works/1.webp'
-import work_2 from '../assets/certificates/works/2.webp'
-
-const WorkCertificate = [
-    {
-        name: "Technical Member | CSI ",
-        image: work_1
-    },
-    {
-        name: "Technical Member | MSC",
-        image: work_2
-    },
-]
-
-import prof_1 from '../assets/certificates/prof/1.webp'
-import prof_2 from '../assets/certificates/prof/2.webp'
-
-const ProfessionalCertificate = [
-    {
-        name: " Google Cloud Digital Leader",
-        image: prof_1
-    },
-    {
-        name: " AI and ML with Data Science",
-        image: prof_2
-    },
-]
-
 const blogs = [
     {
         name: "React router deployment to gh-pages (issue fixed)",
@@ -521,4 +439,4 @@ const blogs = [
 
 ]
 
-export { navLinks, toolLinks, services, experiences, projects, CourseCertificate, WorkCertificate, ProfessionalCertificate, blogs };
+export { navLinks, toolLinks, services, experiences, projects, blogs };
