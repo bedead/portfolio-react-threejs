@@ -4,26 +4,10 @@ import { motion } from "framer-motion";
 
 const NewHero = () => {
     return (
-        <div className="relative bg-black text-white min-h-screen flex flex-col rounded-b-[128px]">
-            {/* Header */}
-            {/* <header className="absolute top-0 left-0 right-0 flex justify-between items-center px-10 py-6">
-                <div className="text-3xl font-bold">
-                    <span className="text-white">cart</span>
-                    <span className="text-green-500">y</span>
-                </div>
-                <nav className="space-x-8 text-white">
-                    <a href="#" className="hover:text-green-500">Features</a>
-                    <a href="#" className="hover:text-green-500">Pricing</a>
-                    <a href="#" className="hover:text-green-500">About Us</a>
-                    <a href="#" className="hover:text-green-500">Faq</a>
-                </nav>
-                <button className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
-                    Get Started
-                </button>
-            </header> */}
+        <div className="relative bg-black text-white h-fit flex flex-col rounded-b-[356px]">
 
             {/* Main Content */}
-            <div className="flex-grow flex flex-col justify-center items-center text-center px-6">
+            <div className="flex-grow flex flex-col justify-center items-center text-center px-6 py-32">
                 <h1 className="text-6xl font-bold">
                     Hello, I am Satyam <br /> Mishra
                 </h1>
@@ -66,7 +50,7 @@ const NewHero = () => {
                 </div>
             </div> */}
 
-            <div className="absolute z-10 xs:bottom-16 bottom-24 w-full flex justify-center items-center">
+            <div className=" absolute z-10 xs:bottom-8 bottom-8 w-full flex justify-center items-center">
                 <a href="#AboutSection">
                     <div className="w-[35px] h-[64px] rounded-3xl border-4 border-primary flex justify-center items-start p-2">
                         <motion.div
