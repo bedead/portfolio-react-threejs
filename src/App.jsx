@@ -5,6 +5,7 @@ import TechSkills from "./components/TechSkills";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import MyBlogs from './components/MyBlogs'
+import NewContact from "./components/NewContact";
 
 function App() {
     return (
@@ -15,7 +16,8 @@ function App() {
             <Resume />
             <Projects />
             <MyBlogs />
-            <Contact />
+            {/* <Contact /> */}
+            <NewContact />
         </div>
     )
 }
