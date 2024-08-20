@@ -62,15 +62,15 @@ const Resume = () => {
                     </div>
 
                     {/* Buttons Container */}
-                    <div className="text-primary flex items-center space-x-5 md:space-y-5 justify-center md:absolute md:top-10 md:-right-24 md:bottom-0 md:flex-col md:items-center md:justify-center transition-opacity duration-300">
+                    <div className="text-primary flex items-center space-x-5 md:space-y-5 justify-center absolute z-10 md:top-10 md:-right-24 md:bottom-0 md:flex-col md:items-center md:justify-center transition-opacity duration-300">
                         <button
                             onClick={handleDownload}
-                            className="mt-8 bg-blue-600 hover:bg-blue-400 font-bold py-3 px-8 rounded-full flex items-center">
+                            className="mt-8 bg-blue-500 hover:bg-blue-300 font-bold py-3 px-6 rounded-full flex items-center">
                             Download <span className="ml-2">▶</span>
                         </button>
                         <button
                             onClick={openDialog}
-                            className="mt-8 bg-green-600 hover:bg-green-400 font-bold py-3 px-8 rounded-full flex items-center">
+                            className="mt-8 bg-green-500 hover:bg-green-300 font-bold py-3 px-6 rounded-full flex items-center">
                             View <span className="ml-2">▶</span>
                         </button>
                     </div>
