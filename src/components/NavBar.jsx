@@ -47,10 +47,10 @@ const NavBar = () => {
                                 link.id
                             }
                                 className={link.type == 'tools' ?
-                                    `bg-black text-white hover:text-gray-200 hover:bg-secondary py-2 px-3 rounded-xl text-[18px] font-medium cursor-pointer`
-                                    : `${active == link.title ? "text-primary" : "text-primary"
+                                    `bg-secondary text-gray-400 hover:text-primary py-2 px-3 rounded-xl text-[18px] font-medium cursor-pointer`
+                                    : `${active == link.title ? "text-primary" : "text-gray-400"
                                     }
-                        hover:text-primary hover:underline underline-offset-8 text-[18px] font-medium cursor-pointer`}
+                        hover:text-primary underline-offset-8 text-[18px] font-medium cursor-pointer`}
                                 onClick={
                                     () => {
                                         setActive(link.title);
@@ -70,7 +70,7 @@ const NavBar = () => {
                         <motion.div
                             className={
                                 `${!toggleDialogBox ? 'hidden' : 'flex'
-                                } p-6 bg-gradient-to-r from-[#f6f6f6] to-white absolute
+                                } p-6 bg-primary absolute
                     top-60 right-40 sm:top-20 sm:right-5 mx-4 my-2 min-w-[140px] z-10 rounded-xl outline`
                             }
                             initial={{ scale: 0.1, opacity: 0, }}

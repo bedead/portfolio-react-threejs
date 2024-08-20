@@ -27,7 +27,7 @@ const NewHero = () => {
                 <h1 className="text-6xl font-bold">
                     Hello, I am Satyam <br /> Mishra
                 </h1>
-                <p className="mt-6 max-w-md text-gray-300">
+                <p className="mt-6 max-w-md text-gray-400">
                     I'm a computer science student with a simple and curious mind.
                 </p>
                 <a href='https://medium.com/@Satyam_Mishra/' target='_blank'>
