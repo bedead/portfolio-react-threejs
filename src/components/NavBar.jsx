@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { styles } from '../styles'
 import { navLinks, toolLinks } from "../constants";
 import logo_white from '../assets/logo/logo-white.webp'
-import menu from '../assets/general/menu.webp'
-import close from '../assets/general/close.webp'
+import menu from '../assets/general/bars-solid.svg'
+import close from '../assets/general/circle-xmark-regular.svg'
 import { fadeIn } from "../utils/motion";
 
 
@@ -17,7 +17,7 @@ const NavBar = () => {
     return (
         <motion.nav className={
             `${styles.paddingX
-            } w-full flex items-center py-5 fixed top-0 z-20 bg-gradient-to-b from-white to-primary`
+            } w-full flex items-center py-5 fixed top-0 z-20 bg-black`
         }
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -31,12 +31,12 @@ const NavBar = () => {
                     <img src={logo_white}
                         className="w-10 h-10 object-contain"
                         alt='logo' />
-                    <div className=" md:block lg:flex ">
+                    <div className="text-primary text-[18px]  md:block lg:flex ">
 
-                        <p className="text-black text-[18px] flex">
+                        <p className="flex">
                             Satyam Mishra &nbsp;
                         </p>
-                        <span className="text-[18px] sm:block hidden">| Bedead</span>
+                        <span className="sm:block hidden">| Bedead</span>
                     </div>
                 </a>
                 {/* Bigger Screen UI */}
@@ -47,10 +47,10 @@ const NavBar = () => {
                                 link.id
                             }
                                 className={link.type == 'tools' ?
-                                    `bg-black text-white hover:text-white-100 hover:bg-secondary py-2 px-3 rounded-xl text-[18px] font-medium cursor-pointer`
-                                    : `${active == link.title ? "text-black" : "text-secondary"
+                                    `bg-black text-white hover:text-gray-200 hover:bg-secondary py-2 px-3 rounded-xl text-[18px] font-medium cursor-pointer`
+                                    : `${active == link.title ? "text-primary" : "text-primary"
                                     }
-                        hover:text-black hover:underline underline-offset-8 text-[18px] font-medium cursor-pointer`}
+                        hover:text-primary hover:underline underline-offset-8 text-[18px] font-medium cursor-pointer`}
                                 onClick={
                                     () => {
                                         setActive(link.title);
@@ -89,8 +89,8 @@ const NavBar = () => {
                                                 fadeIn('right', 'spring', 0.1, 0.75)
                                             }
                                             className={
-                                                `${active == link.title ? "text-black" : "text-secondary"
-                                                } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
+                                                `${active == link.title ? "text-black underline" : "text-secondary"
+                                                } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-secondary`
                                             }
                                             onClick={
                                                 () => {
@@ -118,7 +118,10 @@ const NavBar = () => {
                         alt="menu"
                         className="w-[28px] h-[28px] object-contain cursor-pointer"
                         onClick={
-                            () => setToggle(!toggle)
+                            () => {
+                                { setToggle(!toggle) };
+                                { toggleDialogBox == true ? setToolsDialogBox(false) : null };
+                            }
                         } />
 
                     <AnimatePresence>
@@ -141,8 +144,8 @@ const NavBar = () => {
                                                 link.id
                                             }
                                                 className={
-                                                    `${active == link.title ? "text-black" : "text-secondary"
-                                                    } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-black`
+                                                    `${active == link.title ? "text-black underline" : "text-secondary"
+                                                    } font-poppins hover:underline underline-offset-8 font-medium cursor-pointer text-[16px] hover:text-secondary`
                                                 }
                                                 onClick={
                                                     () => {

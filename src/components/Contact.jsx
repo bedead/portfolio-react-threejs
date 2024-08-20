@@ -101,6 +101,8 @@ const Contact = () => {
             </form>
           )}
         </motion.div>
+
+        {/* right section */}
         <div className="text-center m-auto justify-between space-y-20">
           <div id="ToolsMade">
             <h2 className={`${styles.sectionSubText} font-bold text-center mb-2`}>Open source tools made by me 👇</h2>
