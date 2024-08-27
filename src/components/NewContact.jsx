@@ -50,7 +50,7 @@ const NewContact = () => {
         <footer id="ContactSection" className="lg:grid lg:grid-cols-5 bg-black h-fit ">
             {/* Form */}
             <div className="relative p-12 block h-32 lg:col-span-2 lg:h-full">
-                <p className={`${styles.sectionSubText} text-primary`}>I am open to work</p>
+                <p className={`${styles.sectionSubText} text-white`}>I am open to work</p>
                 <h3 className={`${styles.sectionHeadText} text-primary`}>Get In Touch.</h3>
 
                 {success ? (

@@ -22,11 +22,11 @@ const BlogCard = ({ index, name, date, img, link }) => {
                 placeholder={name}
                 loading="lazy"
                 alt={`${name} cover image`}
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-52 object-cover rounded-2xl"
               />
             </div>
             <p className="mt-3 text-left">{date}</p>
-            <h3 className="text-black font-bold text-[24px] text-center">
+            <h3 className="text-black font-bold text-[24px] text-left">
               {name}
             </h3>
           </a>

@@ -400,6 +400,12 @@ const projects = [
 
 const blogs = [
     {
+        name: "Handling missing data using pandas, and sklearn for data cleaning",
+        date: "Aug 28, 2024",
+        img: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*-3g9afffrv_mrOKLreOQUA.png",
+        link: "https://medium.com/@Satyam_Mishra/handling-missing-data-using-pandas-and-sklearn-for-data-cleaning-4687fc87669c"
+    },
+    {
         name: "React router deployment to gh-pages (issue fixed)",
         date: "Jan 8, 2024",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*KBr7PR6pMmxKnoOn",
