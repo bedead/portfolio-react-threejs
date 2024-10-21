@@ -84,25 +84,6 @@ const services = [
     },
 ];
 
-import csi from '../assets/experience/csi.webp'
-import msc from '../assets/experience/msc.webp'
-// import techyv from '../assets/experience/techyv.webp'
-import nettv4u from '../assets/experience/nettv4u.webp'
-
-const experiences = [
-    {
-        title: "Technical Content Writer",
-        company_name: "Nettv4u",
-        icon: nettv4u,
-        iconBg: "white",
-        date: "October 2023 - December 2023 (2 Months)",
-        points: [
-            'Writing Professional articles related to IT.',
-            'Ensuring use of no AI content in articles.',
-            'Creating articles on real facts and data.'
-        ],
-    },
-];
 
 import shapeout from '../assets/project/shapeout.webp'
 import facedetection from '../assets/project/facedetection.webp'
@@ -454,4 +435,4 @@ const blogs = [
     },
 ]
 
-export { navLinks, toolLinks, services, experiences, projects, blogs };
+export { navLinks, toolLinks, services, projects, blogs };
