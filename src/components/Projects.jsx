@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
 import { fadeIn, textVariant, } from "../utils/motion";
 import { Tilt } from "react-tilt";
 
@@ -13,6 +12,8 @@ import appstore from '../assets/icons/appstore.png'
 import colab from '../assets/icons/colab.png'
 import huggingface from '../assets/icons/huggingface.png'
 import live from '../assets/icons/website.gif'
+import { db } from "../../firebase";
+import { collection, getDocs } from "firebase/firestore";
 
 
 const ProjectCard = ({
@@ -85,17 +86,17 @@ const ProjectCard = ({
 
                     <div className='mt-4 flex flex-wrap gap-2'>
                         {
-                            tags.map((tag) => (
+                            Object.entries(tags).map(([key, value]) => (
                                 <p key={
-                                    `${name}-${tag.name
+                                    `${name}-${key
                                     }`
                                 }
                                     className={
-                                        `text-[14px] ${tag.color
+                                        `text-[14px] ${value
                                         }`
                                     }>
                                     #{
-                                        tag.name
+                                        key
                                     } </p>
                             ))
                         } </div>
@@ -108,6 +109,20 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            const querySnapshot = await getDocs(collection(db, "Projects"));
+            const experiencesArray = querySnapshot.docs.map(doc => doc.data()).sort((a, b) => a.index - b.index);
+            setProjects(experiencesArray);
+        };
+
+        fetchProjects();
+    }, []);
+
+    console.log(projects);
+
     return (
         <section className="-m-5 md:-m-10 ">
             <motion.div

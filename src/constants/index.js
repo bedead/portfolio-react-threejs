@@ -100,31 +100,6 @@ import downloadtube from '../assets/project/downloadtube.webp'
 
 const projects = [
     {
-        name: "Downloadtube",
-        description:
-            "DownloadTube offers a fast, free, and easy way to download your favorite YouTube videos and music directly to your device. Enjoy high-quality video and audio downloads with no subscription required. Explore a variety of formats and resolutions to suit all your playback needs. ",
-        tags: [
-            {
-                name: "next.js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "js",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Youtube API",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: downloadtube,
-        source_code_link: {
-            "Live": "https://downloadtube-iota.vercel.app/",
-            "Github": "https://downloadtube-iota.vercel.app/"
-        },
-        date: 'February 2024',
-    },
-    {
         name: "ConvoGen AI",
         description:
             "'ConvoGen' is the virtual embodiment of me, a chatbot that offers lifelike insights and information about my experiences, interests, and personality. Engage in conversations that feel as real as speaking with me in person, as 'ConvoGen' shares a wealth of personal details and knowledge, creating a truly immersive and authentic chatbot experience.",
