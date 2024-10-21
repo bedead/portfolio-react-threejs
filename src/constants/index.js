@@ -102,31 +102,6 @@ const experiences = [
             'Creating articles on real facts and data.'
         ],
     },
-    {
-        title: "Technical member",
-        company_name: "Microsoft Student Chapter",
-        icon: msc,
-        iconBg: "black",
-        date: "October 2022 - March 2023 (6 Months)",
-        points: [
-            "Maintaining the website and ensuring that it is up-to-date and functioning properly.",
-            "Collaborating with other members of the chapter to identify areas for improvement on the website.",
-            "Implementing changes and updates to the website using programming languages such as React.js, tailwind and JavaScript.",
-            "Debugging any issues or errors that arise on the website and working to resolve them."
-        ],
-    },
-    {
-        title: "V open source member",
-        company_name: "CSI Chapter",
-        icon: csi,
-        iconBg: "white",
-        date: "Augest 2021 - June 2022 (11 Months)",
-        points: [
-            "Conducting regular meetings to discuss open source projects and new initiatives.",
-            "Conducting workshops and training sessions to help members learn more about open source technologies.",
-            "Coordinating with other teams within the CSI chapter to ensure smooth execution of events."
-        ],
-    },
 ];
 
 import shapeout from '../assets/project/shapeout.webp'
