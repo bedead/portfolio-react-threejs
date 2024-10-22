@@ -13,7 +13,8 @@ import colab from '../assets/icons/colab.png'
 import huggingface from '../assets/icons/huggingface.png'
 import live from '../assets/icons/website.gif'
 import { db } from "../../firebase";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
+
 
 
 const ProjectCard = ({
@@ -110,6 +111,7 @@ const ProjectCard = ({
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+
 
     useEffect(() => {
         const fetchProjects = async () => {
