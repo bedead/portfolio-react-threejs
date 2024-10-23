@@ -49,7 +49,7 @@ const Experience = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       const querySnapshot = await getDocs(collection(db, "Experience"));
-      const experiencesArray = querySnapshot.docs.map(doc => doc.data()).sort((a, b) => a.index - b.index);
+      const experiencesArray = querySnapshot.docs.map(doc => doc.data()).sort((a, b) => b.index - a.index);
       setExperiences(experiencesArray);
     };
 

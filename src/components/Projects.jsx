@@ -13,7 +13,7 @@ import colab from '../assets/icons/colab.png'
 import huggingface from '../assets/icons/huggingface.png'
 import live from '../assets/icons/website.gif'
 import { db } from "../../firebase";
-import { collection, getDocs, addDoc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 
 
@@ -116,14 +116,14 @@ const Projects = () => {
     useEffect(() => {
         const fetchProjects = async () => {
             const querySnapshot = await getDocs(collection(db, "Projects"));
-            const experiencesArray = querySnapshot.docs.map(doc => doc.data()).sort((a, b) => a.index - b.index);
-            setProjects(experiencesArray);
+            const projectsArray = querySnapshot.docs.map(doc => doc.data()).sort((a, b) => b.index - a.index);
+            setProjects(projectsArray);
         };
 
         fetchProjects();
     }, []);
 
-    console.log(projects);
+    // console.log(projects);
 
     return (
         <section className="-m-5 md:-m-10 ">

@@ -334,76 +334,89 @@ const blogs = [
     {
         name: "Handling missing data using pandas, and sklearn for data cleaning",
         date: "Aug 28, 2024",
+        index: 12,
         img: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*-3g9afffrv_mrOKLreOQUA.png",
         link: "https://medium.com/@Satyam_Mishra/handling-missing-data-using-pandas-and-sklearn-for-data-cleaning-4687fc87669c"
     },
     {
         name: "React router deployment to gh-pages (issue fixed)",
         date: "Jan 8, 2024",
+        index: 11,
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*KBr7PR6pMmxKnoOn",
         link: "https://medium.com/@Satyam_Mishra/react-router-deployment-to-gh-pages-issue-fixed-2024-bc7fd80946ad"
     },
     {
         name: "Vite website file not updating without restarting the development server.",
         date: "Oct 15, 2023",
+        index: 10,
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*tvWtuvWK1j4r4c1V",
         link: "https://medium.com/@Satyam_Mishra/vite-website-file-not-updating-without-restarting-the-development-server-68a7a252186b"
     },
     {
         name: "Deploy your vite (react) app to GitHub pages",
         date: "Oct 5, 2023",
+        index: 9,
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Ndj_GnufQCzvRyT6454_-Q.png",
         link: "https://medium.com/@Satyam_Mishra/deploy-your-vite-react-app-to-github-pages-a6342dda470a"
     },
     {
+        index: 8,
         name: "Two of the best free resources for continuous learning",
         date: "May 6, 2023",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*E8m74KMwm304e_mdPI9g6Q.png",
         link: "https://medium.com/@Satyam_Mishra/two-of-the-best-free-resources-for-continuous-learning-665fdf52be9b"
     },
     {
+        index: 7,
         name: "How to set up Vite (react.js) application to have multiple endpoints",
         date: "Jan 20, 2023",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*BnZlZbw6_YmuZ_00h9TNrg.png",
         link: "https://medium.com/@Satyam_Mishra/how-to-set-up-vite-react-js-application-to-have-multiple-endpoints-a27a388cbbc3"
     },
     {
+        index: 6,
         name: "Structuring Flask application for multiple apps",
         date: "Dec 22, 2022",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*qNHflWY5VgqfzO35htz8Yw.png",
         link: "https://medium.com/@Satyam_Mishra/structuring-flask-application-for-multiple-apps-part-2-79eefca094de"
     },
     {
+        index: 5,
         name: "MUST HAVE DEVELOPER / PROGRAMMERS GEARS.",
         date: "Dec 17, 2022",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*tx9sts6K-tG2myM-OA69vg.png",
         link: "https://medium.com/@Satyam_Mishra/must-have-developer-programmers-gears-3fd5f805186"
     },
     {
+        index: 4,
         name: "Learn the basics of Python",
         date: "Aug 3, 2022",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/0*G9WB3cWh6SmHFA_2",
         link: "https://medium.com/@Satyam_Mishra/learn-basics-of-python-part-1-9919303c1b3a"
     },
     {
+        index: 3,
         name: "Create your first Flask application",
         date: "Jul 29, 2022",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2fA099YHqxNlcxWOK9hMoA.png",
         link: "https://medium.com/@Satyam_Mishra/create-your-first-flask-application-48a698b524ca"
     },
     {
+        index: 2,
         name: "Java vs Python (The Ultimate Programming Language)",
         date: "Jul 22, 2022",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Y_ycyItZ76XNpY9TM76JMg.jpeg",
         link: "https://medium.com/@Satyam_Mishra/java-vs-python-the-ultimate-programming-language-8c00a5b49cc"
     },
     {
+        index: 1,
         name: "Getting started with JavaFx in vscode (Beginner way)",
         date: "Jul 17, 2022",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*4PYrphm6D1qQ5GfRGLJllw.jpeg",
         link: "https://medium.com/@Satyam_Mishra/getting-started-with-javafx-in-vscode-beginner-way-9fed580fd4f"
     },
     {
+        index: 0,
         name: "A Simple guide to script your first movable car in Godot engine.",
         date: "Jan 10, 2022",
         img: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*S4dHJNkanZ_ZQ4-w8fT1nQ.png",

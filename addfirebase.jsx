@@ -9,7 +9,7 @@ const UploadProjects = () => {
     useEffect(() => {
         const uploadProjects = async () => {
             try {
-                const projectsCollection = collection(db, 'Projects'); // create or reference the collection 'projects'
+                const projectsCollection = collection(db, 'Blogs'); // create or reference the collection 'projects'
 
                 // Iterate over each project and add to Firebase
                 for (const project of projects) {

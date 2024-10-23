@@ -1,11 +1,28 @@
-import React from "react";
-import { blogs } from "../constants";
+import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import BlogCard from "./BlogCard";
 import { SectionWrapper } from "../hoc";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase";
+
 
 
 function MyBlogs() {
+  const [blogs, setBlogs] = useState([]);
+
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      const querySnapshot = await getDocs(collection(db, "Blogs"));
+      const BlogsArray = querySnapshot.docs.map(doc => doc.data()).sort((a, b) => b.index - a.index);
+      setBlogs(BlogsArray);
+    };
+
+    fetchBlogs();
+  }, []);
+
+  // console.log(blogs);
+
   return (
     <div className="my-10">
       <div>

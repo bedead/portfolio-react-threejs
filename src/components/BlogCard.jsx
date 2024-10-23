@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { fadeIn } from "../utils/motion";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase";
 
-const BlogCard = ({ index, name, date, img, link }) => {
+
+
+const BlogCard = ({ index, name, date, image, link }) => {
+
   return (
     <div>
       <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
@@ -18,7 +23,7 @@ const BlogCard = ({ index, name, date, img, link }) => {
           <a href={link} target="_blank">
             <div className="relative w-full ">
               <img
-                src={img}
+                src={image}
                 placeholder={name}
                 loading="lazy"
                 alt={`${name} cover image`}
