@@ -21,7 +21,7 @@ function MyBlogs() {
     fetchBlogs();
   }, []);
 
-  // console.log(blogs);
+  console.log(blogs);
 
   return (
     <div className="my-10">
@@ -31,7 +31,7 @@ function MyBlogs() {
           Blogs written by me
         </p>
       </div>
-      <div className="my-20 flex flex-wrap justify-center mx-auto space-x-5 gap-5 w-full">
+      <div className="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {blogs.map((blog, index) => (
           <BlogCard key={`blog-${index}`} index={index} {...blog} />
         ))}
