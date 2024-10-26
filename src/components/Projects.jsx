@@ -29,8 +29,9 @@ const ProjectCard = ({
     return (
         <Tilt className='sm:w-[360px] w-full'>
             <motion.div
+                id={index}
                 variants={
-                    fadeIn('right', 'spring', 1, 0.75)
+                    fadeIn('right', 'spring', 0, 0.75)
                 }
                 className="shadow-[#fcd4d4] green-pink-gradient shadow-card p-[1px] rounded-2xl "
             >
