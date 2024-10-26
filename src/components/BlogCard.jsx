@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { fadeIn } from "../utils/motion";
@@ -8,7 +8,7 @@ import { fadeIn } from "../utils/motion";
 const BlogCard = ({ index, name, date, image, link }) => {
 
   return (
-    <div>
+    <div id={index}>
       <motion.div variants={fadeIn('right', 'spring', 1, 0.75)}>
         <Tilt
           options={{

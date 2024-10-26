@@ -21,7 +21,7 @@ function MyBlogs() {
     fetchBlogs();
   }, []);
 
-  console.log(blogs);
+  // console.log(blogs);
 
   return (
     <div className="my-10">
