@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { styles } from '../styles'
-import { navLinks, toolLinks } from "../constants";
-import logo_white from '../assets/logo/logo-white.webp'
-import menu from '../assets/general/bars-solid.svg'
-import close from '../assets/general/circle-xmark-regular.svg'
-import { fadeIn } from "../utils/motion";
+import { styles } from '../../styles'
+import { navLinks, toolLinks } from "../../constants";
+import logo_white from '../../assets/logo/logo-white.webp'
+import menu from '../../assets/general/bars-solid.svg'
+import close from '../../assets/general/circle-xmark-regular.svg'
+import { fadeIn } from "../../utils/motion";
 
 
 const NavBar = () => {

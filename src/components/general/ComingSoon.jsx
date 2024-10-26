@@ -1,7 +1,7 @@
 import React from "react";
-import { SectionWrapper } from "../hoc";
-import { styles } from "../styles";
-import { textVariant } from "../utils/motion";
+import { SectionWrapper } from "../../hoc";
+import { styles } from "../../styles";
+import { textVariant } from "../../utils/motion";
 import { motion } from "framer-motion";
 
 function ComingSoon() {

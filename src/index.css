@@ -12,9 +12,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background: linear-gradient(180deg, #e6eaf5 0%, #f6f6f6 80%);
-}
 
 .hash-span {
   margin-top: -100px;

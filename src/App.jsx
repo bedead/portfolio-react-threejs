@@ -1,26 +1,15 @@
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-import NavBar from "./components/NavBar";
-import TechSkills from "./components/TechSkills";
-import Resume from "./components/Resume";
-import Projects from "./components/Projects";
-import MyBlogs from './components/MyBlogs'
-import NewContact from "./components/NewContact";
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/general/NavBar";
 
-function App() {
+
+const App = () => {
     return (
-        <div className="bg-gradient-to-b from-white to-primary">
-            <NavBar />
-            <Home />
-            <TechSkills />
-            <Resume />
-            <Projects />
-            <MyBlogs />
-            {/* <Contact /> */}
-            <NewContact />
+        <div>
+            {/* Render NavBar only if the current path is not '/login' */}
+            {location.pathname !== '/login' && <NavBar />}
+            <Outlet />
         </div>
-    )
-}
+    );
+};
 
-
-export default App
+export default App;

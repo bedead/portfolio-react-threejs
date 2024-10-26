@@ -1,5 +1,5 @@
 // src/components/HeroSection.js
-import { SectionWrapper } from '../hoc';
+import { SectionWrapper } from '../../hoc';
 import { motion } from "framer-motion";
 
 const NewHero = () => {

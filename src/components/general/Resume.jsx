@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import cover_img from '../assets/resume/cover_img.webp'
-import resume_pdf from '../assets/resume/resume.pdf'
+import cover_img from '../../assets/resume/cover_img.webp'
+import resume_pdf from '../../assets/resume/resume.pdf'
 import { Tilt } from 'react-tilt';
-import { styles } from "../styles";
+import { styles } from "../../styles";
 import { motion } from 'framer-motion';
-import { textVariant, fadeIn } from '../utils/motion';
-import { SectionWrapper } from '../hoc';
+import { textVariant, fadeIn } from '../../utils/motion';
+import { SectionWrapper } from '../../hoc';
 
 
 const Resume = () => {

@@ -1,8 +1,8 @@
 import React from "react";
-import { styles } from "../styles";
+import { styles } from "../../styles";
 import { motion } from "framer-motion";
-import { textVariant, fadeIn } from "../utils/motion";
-import SectionWrapper from "../hoc/SectionWrapper";
+import { textVariant, fadeIn } from "../../utils/motion";
+import SectionWrapper from "../../hoc/SectionWrapper";
 
 const Hero = () => {
   const text = "Hi, I'm Satyam";

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { styles } from "../styles";
+import { styles } from "../../styles";
 import BlogCard from "./BlogCard";
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../../hoc";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 
 
 

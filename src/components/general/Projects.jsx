@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant, } from "../utils/motion";
+import { styles } from "../../styles";
+import { SectionWrapper } from "../../hoc";
+import { fadeIn, textVariant, } from "../../utils/motion";
 import { Tilt } from "react-tilt";
 
 
 // source link icons
-import github from '../assets/icons/github.webp'
-import appstore from '../assets/icons/appstore.png'
-import colab from '../assets/icons/colab.png'
-import huggingface from '../assets/icons/huggingface.png'
-import live from '../assets/icons/website.gif'
-import { db } from "../../firebase";
+import github from '../../assets/icons/github.webp'
+import appstore from '../../assets/icons/appstore.png'
+import colab from '../../assets/icons/colab.png'
+import huggingface from '../../assets/icons/huggingface.png'
+import live from '../../assets/icons/website.gif'
+import { db } from "../../../firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 
