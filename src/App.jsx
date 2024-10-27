@@ -6,7 +6,7 @@ const App = () => {
     return (
         <div>
             {/* Render NavBar only if the current path is not '/login' */}
-            {location.pathname !== '/login' && <NavBar />}
+            {location.pathname === '/' && <NavBar />}
             <Outlet />
         </div>
     );
