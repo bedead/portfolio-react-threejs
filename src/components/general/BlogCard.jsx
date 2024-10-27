@@ -9,7 +9,7 @@ const BlogCard = ({ index, name, date, image, link }) => {
 
   return (
     <div id={index}>
-      <motion.div variants={fadeIn('right', 'spring', 0, 0.75)}>
+      <motion.div variants={fadeIn('right', 'spring', 0.5, 0.75)}>
         <Tilt
           options={{
             max: 45,
