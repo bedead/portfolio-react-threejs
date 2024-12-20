@@ -12,7 +12,6 @@ import AddExperience from './components/admin/AddExperience';
 import EditBlog from './components/admin/EditBlog';
 import EditProject from './components/admin/EditProject';
 import EditExperience from './components/admin/EditExperience';
-import NavBar from './components/general/NavBar';
 
 
 
@@ -20,7 +19,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <Router>
-    <NavBar />
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
