@@ -3,7 +3,6 @@
   "private": false,
   "version": "2.7",
   "type": "module",
-  "homepage": "https://bedead.github.io/portfolio-react-threejs/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
