@@ -2,13 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from 'firebase/firestore';
-import { db } from '../../../firebase';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { db, storage } from '../../../firebase';
 
 const AddProject = () => {
     const [projectName, setProjectName] = useState('');
     const [description, setDescription] = useState('');
     const [date, setDate] = useState('');
-    const [image, setImage] = useState('');
+    const [image, setImage] = useState(null);
     const [index, setIndex] = useState('');
     const [sourceCodeLinks, setSourceCodeLinks] = useState([{ key: '', value: '' }]);
     const [tags, setTags] = useState([{ key: '', value: '' }]);
@@ -49,26 +50,30 @@ const AddProject = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!projectName || !description) {
+        if (!projectName || !description || !image) {
             setError('All fields are required');
             return;
         }
         setError('');
 
         try {
+            const imageRef = ref(storage, `Projects/${image.name}`);
+            await uploadBytes(imageRef, image);
+            const imageUrl = await getDownloadURL(imageRef);
+
             const projectsCollection = collection(db, 'Projects');
             await addDoc(projectsCollection, {
                 name: projectName,
                 description: description,
                 date: date,
-                image: image,
+                image: imageUrl,
                 index: index,
-                source_code_links: sourceCodeLinks.reduce((acc, link) => ({ ...acc, [link.key]: link.value }), {}),
+                source_code_link: sourceCodeLinks.reduce((acc, link) => ({ ...acc, [link.key]: link.value }), {}),
                 tags: tags.reduce((acc, tag) => ({ ...acc, [tag.key]: tag.value }), {}),
             });
             setProjectName('');
             setDescription('');
-            setImage('');
+            setImage(null);
             setSourceCodeLinks([{ key: '', value: '' }]);
             setTags([{ key: '', value: '' }]);
             alert('Project added successfully!');
@@ -103,12 +108,12 @@ const AddProject = () => {
                     ></textarea>
                 </div>
                 <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700">Image URL</label>
+                    <label className="block text-sm font-medium text-gray-700">Image</label>
                     <input
-                        type="text"
+                        type="file"
                         className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                        value={image}
-                        onChange={(e) => setImage(e.target.value)}
+                        onChange={(e) => setImage(e.target.files[0])}
+                        required
                     />
                 </div>
                 <div className="mb-4">
