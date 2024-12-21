@@ -45,7 +45,7 @@ const navLinks = [
     },
     {
         id: "freetools",
-        title: "Free Tools",
+        title: "Open Source Tools",
         type: "tools"
     },
 ];
