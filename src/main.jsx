@@ -9,8 +9,6 @@ import Dashboard from './components/admin/Dashboard';
 import AddBlog from './components/admin/AddBlog';
 import AddProject from './components/admin/AddProject';
 import AddExperience from './components/admin/AddExperience';
-import EditBlog from './components/admin/EditBlog';
-import EditProject from './components/admin/EditProject';
 import EditExperience from './components/admin/EditExperience';
 
 
@@ -28,8 +26,6 @@ root.render(
           <Route path="add-blog" element={<AddBlog />} />
           <Route path="add-project" element={<AddProject />} />
           <Route path="add-experience" element={<AddExperience />} />
-          <Route path="edit-blog" element={<EditBlog />} />
-          <Route path="edit-project" element={<EditProject />} />
           <Route path="edit-experience" element={<EditExperience />} />
         </Route>
 
