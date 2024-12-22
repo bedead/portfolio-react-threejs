@@ -14,6 +14,7 @@ Welcome to my personal portfolio built with React and Three.js! This portfolio s
 - **Three.js:** JavaScript 3D library to create and display animated 3D computer graphics in a web browser.
 - **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
 - **Framer Motion:** A library to power animations in React projects.
+- **Firebase - FireStone Storage :** For NO-SQL Data/Image Storage.
 
 ## Project Structure
 
