@@ -18,7 +18,7 @@ const AdminLogin = () => {
                 // Signed in 
                 const user = userCredential.user;
                 console.log('User  signed in:', user);
-                navigate('/admin/dashboard'); // Redirect to the dashboard
+                navigate('/admin/dashboard/todos'); // Redirect to the dashboard
             })
             .catch((error) => {
                 const errorCode = error.code;
