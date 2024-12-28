@@ -44,7 +44,7 @@ const AddBlog = () => {
 
             const blogsCollection = collection(db, 'Blogs');
             await addDoc(blogsCollection, {
-                title: title,
+                name: title,
                 date: date,
                 image: imageUrl,
                 index: index,
