@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import App from './App';
 import Home from './components/general/Home';
 import Login from './components/admin/Login';
+import TestPage from './components/test/page'
 import Dashboard from './components/admin/Dashboard';
 import AddBlog from './components/admin/AddBlog';
 import AddProject from './components/admin/AddProject';
@@ -23,7 +24,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-
+          <Route path="/test" element={<TestPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin/dashboard" element={<ProtectedRoute />} >
             <Route path='' element={<Dashboard />} >
