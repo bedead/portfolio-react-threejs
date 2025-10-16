@@ -3,8 +3,9 @@ export const content = ["./src/**/*.{js,jsx}"];
 export const theme = {
   extend: {
     colors: {
-      primary: "#f6f6f6",
-      secondary: "#373737",
+      background: '#fafafa',
+      primary: '#111111',
+      secondary: '#666666',
       tertiary: "#fcd4d4",
       "black-100": "#100d25",
       "black-200": "#090325",
@@ -18,6 +19,9 @@ export const theme = {
     },
     backgroundImage: {
       // "hero-pattern": "url('/src/assets/herobg.webp')",
+    },
+    fontFamily: {
+      sans: ['Inter', 'system-ui', 'sans-serif'],
     },
   },
 };
