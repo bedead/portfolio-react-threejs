@@ -1,6 +1,4 @@
-import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { styles } from "../../styles";
 
 const ContactMinimal = () => {
 

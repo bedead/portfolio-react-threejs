@@ -22,7 +22,7 @@ const NewHeroMinimal = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="text-center">
+                className="text-center dark:text-neutral-400">
                 Some subtitle maybe (will update next time).
             </motion.h2>
 
