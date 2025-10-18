@@ -28,9 +28,9 @@ const BlogsMinimal = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="text-4xl font-semibold leading-tight tracking-tight"
+                className="text-3xl max-w-2xl font-semibold"
             >
-                Blogs
+                Blogs.
             </motion.h2>
 
             <motion.p
@@ -57,7 +57,7 @@ const BlogsMinimal = () => {
                         transition={{ delay: index * 0.1, duration: 0.5 }}
                         className="block group"
                     >
-                        <h3 className="text-xl sm:text-2xl font-medium text-neutral-900 dark:text-neutral-100 group-hover:text-yellow-500 transition-colors">
+                        <h3 className="text-xl sm:text-2xl font-medium text-neutral-900 dark:text-neutral-100 group-hover:text-tertiary transition-colors">
                             {blog.name}
                         </h3>
                         {blog.date && (

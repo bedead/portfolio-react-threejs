@@ -19,7 +19,7 @@ const NavBarMinimal = () => {
                 <a
                     href="#"
                     onClick={() => setActive("")}
-                    className="text-lg font-semibold tracking-tight text-neutral-600 dark:text-neutral-400 hover:text-white transition-colors"
+                    className="text-lg font-semibold tracking-tight text-neutral-600 dark:text-neutral-400 dark:hover:text-tertiary transition-colors"
                 >
                     Satyam Mishra<span className="text-neutral-400">.</span>
                 </a>
@@ -32,8 +32,8 @@ const NavBarMinimal = () => {
                                 href={`#${link.id}`}
                                 onClick={() => setActive(link.title)}
                                 className={`${active === link.title
-                                    ? "text-black dark:text-white underline underline-offset-4"
-                                    : "text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white hover:underline underline-offset-4"
+                                    ? "text-black dark:text-tertiary underline underline-offset-4"
+                                    : "text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-tertiary hover:underline underline-offset-4"
                                     } font-medium transition-colors`}
                             >
                                 {link.title}
