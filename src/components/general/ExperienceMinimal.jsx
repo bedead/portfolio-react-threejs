@@ -20,7 +20,7 @@ const ExperienceMinimal = () => {
     return (
         <section
             id="experience"
-            className="flex flex-col items-center justify-center text-center bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 px-6 py-24 border-t border-neutral-200 dark:border-neutral-800"
+            className="flex flex-col items-center justify-center text-center bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 px-6 py-24 border-neutral-200 dark:border-neutral-800"
         >
             {/* Heading */}
             <motion.h2

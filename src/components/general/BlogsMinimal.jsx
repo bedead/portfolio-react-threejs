@@ -19,8 +19,8 @@ const BlogsMinimal = () => {
 
     return (
         <section
-            id="blogs"
-            className="flex flex-col items-center justify-center text-center bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 px-6 py-24 border-t border-neutral-200 dark:border-neutral-800"
+            id="Blogs"
+            className="flex flex-col items-center justify-center text-center bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 px-6 py-24 border-neutral-200 dark:border-neutral-800"
         >
             {/* Heading */}
             <motion.h2
@@ -28,7 +28,7 @@ const BlogsMinimal = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="text-4xl sm:text-5xl font-semibold leading-tight tracking-tight"
+                className="text-4xl font-semibold leading-tight tracking-tight"
             >
                 Blogs
             </motion.h2>
@@ -38,9 +38,9 @@ const BlogsMinimal = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="mt-4 max-w-2xl text-neutral-600 dark:text-neutral-400 text-lg"
+                className="mt-4 max-w-2xl text-neutral-600 dark:text-neutral-400"
             >
-                Thoughts, projects, and learnings I’ve shared publicly.
+                Some stuff, hand typed by me.
             </motion.p>
 
             {/* Blogs List */}

@@ -4,49 +4,24 @@ import creator from '../assets/general/creator.webp'
 
 const navLinks = [
     {
-        id: "HeroSection",
+        id: "Home",
         title: "Home",
         type: "route"
     },
     {
-        id: "AboutSection",
-        title: "About",
-        type: "route"
-    },
-    {
-        id: "ExperienceSection",
-        title: "Experience",
-        type: "route"
-    },
-    {
-        id: "TechSkillsSection",
-        title: "Skills",
-        type: "route"
-    },
-    {
-        id: "ResumeSection",
-        title: "Resume",
-        type: "route"
-    },
-    {
-        id: "ProjectsSection",
-        title: "Projects",
-        type: "route"
-    },
-    {
-        id: "BlogsSections",
+        id: "Blogs",
         title: "Blogs",
         type: "route"
     },
     {
-        id: "ContactSection",
+        id: "Contacts",
         title: "Contact",
         type: "route"
     },
     {
-        id: "freetools",
-        title: "Open Source Tools",
-        type: "tools"
+        id: "ContactSection",
+        title: "Know more",
+        type: "route"
     },
 ];
 

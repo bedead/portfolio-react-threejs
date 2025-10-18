@@ -1,7 +1,7 @@
 // src/components/general/NavBarMinimal.jsx
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { navLinks, toolLinks } from "../../constants";
+import { navLinks } from "../../constants";
 
 
 const NavBarMinimal = () => {

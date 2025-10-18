@@ -6,7 +6,7 @@ const ContactMinimal = () => {
 
     return (
         <section
-            id="ContactSection"
+            id="Contacts"
             className="bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 px-6 py-24"
         >
             <motion.div
