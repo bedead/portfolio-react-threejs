@@ -23,7 +23,7 @@ const ContactMinimal = () => {
                         <div className="flex text-sm justify-center gap-6 mt-1">
                             {[
                                 { name: "Instagram", link: "https://www.instagram.com/satyammishra9050/", subtext: "not really active" },
-                                { name: "X / Twitter", link: "https://x.com/bedeadmishra", subtext: "some times active" },
+                                { name: "X / Twitter", link: "https://x.com/thathasthx", subtext: "some times active" },
                                 { name: "LinkedIn", link: "https://www.linkedin.com/in/theaiguysatyam/", subtext: "some times active" },
                             ].map((social) => (
                                 <a
