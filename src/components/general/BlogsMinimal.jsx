@@ -8,12 +8,19 @@ const BlogsMinimal = () => {
 
     useEffect(() => {
         const fetchBlogs = async () => {
-            const querySnapshot = await getDocs(collection(db, "Blogs"));
-            const blogsArray = querySnapshot.docs
-                .map(doc => doc.data())
-                .sort((a, b) => new Date(b.date) - new Date(a.date));
-            setBlogs(blogsArray);
+            try {
+                const querySnapshot = await getDocs(collection(db, "Blogs"));
+
+                const blogsArray = querySnapshot.docs
+                    .map(doc => doc.data())
+                    .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                setBlogs(blogsArray);
+            } catch (err) {
+                console.error(err);
+            }
         };
+
         fetchBlogs();
     }, []);
 
