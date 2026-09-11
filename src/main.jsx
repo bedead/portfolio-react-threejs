@@ -12,6 +12,7 @@ import EditExperience from './components/admin/EditExperience';
 import TodosHome from './components/admin/TodosHome';
 import ProtectedRoute from './ProtectedRoute';
 import { AuthProvider } from './hooks/useAuth';
+import PrivacyPolicy from './components/general/CardKeepPrivacyPolicy';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
+          <Route path="/cardkeep/privacy_policy" element={<PrivacyPolicy />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin/dashboard" element={<ProtectedRoute />} >
             <Route path='' element={<Dashboard />} >
