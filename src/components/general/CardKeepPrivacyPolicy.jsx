@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
                 {/* App Header */}
                 <div className="text-center mb-12">
                     <img
-                        src="/src/assets/logo/cardkeep-icon.png"
+                        src="/cardkeep-icon.png"
                         alt="CardKeep Logo"
                         className="mx-auto h-20 w-20 rounded-2xl mb-4"
                     />
