@@ -227,12 +227,13 @@ const PrivacyPolicy = () => {
                         <h2 className="text-xl font-semibold text-white mb-3">
                             Contact
                         </h2>
-
+                        {/* add contact information here, email address sid905030@gmail.com  */}
                         <p className="text-gray-400 leading-7">
                             If you have questions, concerns, or feedback about
                             this Privacy Policy or CardKeep, please contact the
-                            developer through the contact information provided
-                            on the CardKeep application store page.
+                            developer at <a href="mailto:sid905030@gmail.com" className="text-blue-400 hover:underline">
+                                sid905030@gmail.com
+                            </a>.
                         </p>
                     </section>
 
